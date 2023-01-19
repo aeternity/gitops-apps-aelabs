@@ -1,9 +1,6 @@
 app:
   strategy:
     type: "Recreate"
-  secrets:
-    external:
-      remotePrefix: "/k8s/stg-m4n4"
   resources:
     limits:
       cpu: "2"
@@ -18,4 +15,4 @@ app:
           - path: "/"
   serviceMonitor:
     enabled: false
-  versions: []
+
