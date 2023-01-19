@@ -16,4 +16,6 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
+  serviceMonitor:
+    enabled: false
   versions: []
