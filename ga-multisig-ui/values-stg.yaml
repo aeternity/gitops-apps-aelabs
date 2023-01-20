@@ -1,0 +1,12 @@
+app:
+  ingress:
+    hosts:
+      - host: "ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+      - host: "pr-4-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-4"
+  versions:
+    - version: "pr-4"

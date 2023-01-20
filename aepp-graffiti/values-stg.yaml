@@ -1,0 +1,7 @@
+app:
+  ingress:
+    hosts:
+      - host: "aepp-grafitti.stg.aepps.com"
+        paths:
+          - path: "/"
+  versions: []

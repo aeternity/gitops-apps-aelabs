@@ -1,0 +1,7 @@
+app:
+  ingress:
+    hosts:
+      - host: "state-channel-demo.stg.aepps.com"
+        paths:
+          - path: "/"
+  versions: []

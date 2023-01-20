@@ -1,0 +1,11 @@
+app:
+  ingress:
+    hosts:
+      - host: "state-channel-demo-backend.stg.aepps.com"
+        paths:
+          - path: "/"
+  versions: []
+  env:
+    "NODE_URL": "https://testnet.aeternity.io"
+    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
+    "NODE_ENV": "testnet"

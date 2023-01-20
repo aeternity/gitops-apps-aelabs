@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "superhero-wallet.stg.aepps.com"
+        paths:
+          - path: "/"
