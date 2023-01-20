@@ -28,3 +28,5 @@ app:
     "NODE_URL": "https://testnet.prd.aepps.com"
     "WS_URL": "wss://testnet.prd.aepps.com/channel"
     "NODE_ENV": "testnet"
+  serviceMonitor:
+    enabled: false

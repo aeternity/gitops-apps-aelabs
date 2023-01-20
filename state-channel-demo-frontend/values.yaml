@@ -13,3 +13,5 @@ app:
       enabled: false
     readiness:
       enabled: false
+  serviceMonitor:
+    enabled: false

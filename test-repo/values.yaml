@@ -46,3 +46,5 @@ app:
     "PATH_IDENTIFIER": "/"
     "BACKUP_REMOTE": "true"
     "BACKUP_IPFS": "true"
+  serviceMonitor:
+    enabled: false
