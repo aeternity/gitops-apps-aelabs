@@ -11,6 +11,9 @@ app:
   service:
     port: 3000
 
+  serviceMonitor:
+    enabled: false
+
   probes:
     liveness:
       config:
