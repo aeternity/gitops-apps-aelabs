@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "dex.dev.aepps.com"
+        paths:
+          - path: "/"

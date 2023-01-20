@@ -1,0 +1,14 @@
+app:
+  ingress:
+    hosts:
+      - host: "state-channel-demo-backend.dev.aepps.com"
+        paths:
+          - path: "/"
+      - host: "develop-state-channel-demo-backend.dev.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - {version: "develop", gitSha: "a31da01"}
+  env:
+    "NODE_ENV": "production"

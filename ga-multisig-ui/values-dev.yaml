@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "ga-multisig-ui.dev.aepps.com"
+        paths:
+          - path: "/"
