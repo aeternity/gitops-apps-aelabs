@@ -24,5 +24,7 @@ app:
     "PG_DB": "ga-multisig-backend-mainnet"
     "PG_PORT": "5432"
     "PG_USER": "postgres"
+    "MIDDLEWARE_URL": https://mainnet.aeternity.io/mdw
+    "NODE_URL": https://mainnet.aeternity.io
   serviceMonitor:
     enabled: false
