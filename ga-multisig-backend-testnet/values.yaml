@@ -3,12 +3,6 @@ app:
     repository: aeternitybot/ga-multisig-backend
     tag: v1.0.1
     pullPolicy: "Always"
-  resources:
-    limits:
-      memory: 96Mi
-    requests:
-      cpu: 150m
-      memory: 96Mi
   secrets:
     external:
       values:
