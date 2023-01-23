@@ -24,3 +24,5 @@ app:
     "PG_DB": "ga-multisig-backend-testnet"
     "PG_PORT": "5432"
     "PG_USER": "postgres"
+  serviceMonitor:
+    enabled: false
