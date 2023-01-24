@@ -4,11 +4,11 @@ app:
     tag: v1.0.1
     pullPolicy: "Always"
     resources:
-    limits:
-      memory: 100Mi
-    requests:
-      cpu: 50m
-      memory: 100Mi
+  limits:
+    memory: 100Mi
+  requests:
+    cpu: 50m
+    memory: 100Mi
   secrets:
     external:
       values:
