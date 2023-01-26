@@ -5,9 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 12Mi
+      memory: 100Mi
     requests:
-      memory: 12Mi
+      memory: 100Mi
   ingress:
     enabled: true
     annotations:
