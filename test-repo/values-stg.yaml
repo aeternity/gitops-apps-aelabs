@@ -1,18 +1,16 @@
 app:
-  strategy:
-    type: "Recreate"
-  resources:
-    limits:
-      cpu: "2"
-      memory: "6Gi"
-    requests:
-      cpu: "1"
-      memory: "5Gi"
+  image:
+    repository: aeternitybot/test-repo
+    pullPolicy: "Always"
+  secrets:
+    external:
+      remotePrefix: /k8s/stg-m4n4
   ingress:
     hosts:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-  serviceMonitor:
-    enabled: false
-
+    tls:
+      - hosts:
+        - "test-repo.stg.aepps.com"
+        secretName: aepp-test-repo-cert
