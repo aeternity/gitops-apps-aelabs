@@ -14,7 +14,5 @@ app:
         paths:
           - path: "/"
             version: "pr-148"
-  serviceMonitor:
-    enabled: "false"
   versions:
     - version: "pr-148"

@@ -17,9 +17,7 @@ app:
     annotations:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
-
-  serviceMonitor:
-    enabled: false
+      
   env:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
@@ -28,7 +26,3 @@ app:
     external:
       values:
         FAUCET_ACCOUNT_PRIV_KEY: /apps/FAUCET_ACCOUNT_PRIV_KEY
-  
-  imagePullSecrets: []
-  nameOverride: ""
-  fullnameOverride: ""
