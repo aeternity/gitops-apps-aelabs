@@ -2,9 +2,6 @@ app:
   image:
     repository: aeternitybot/test-repo
     pullPolicy: "Always"
-  secrets:
-    external:
-      remotePrefix: /k8s/stg-m4n4
   ingress:
     hosts:
       - host: "test-repo.stg.aepps.com"
