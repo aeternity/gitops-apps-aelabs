@@ -7,9 +7,3 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-148-test-repo.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-148"
-  versions:
-    - version: "pr-148"
