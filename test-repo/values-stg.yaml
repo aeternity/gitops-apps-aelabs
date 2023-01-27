@@ -10,7 +10,11 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "test-repo.stg.aepps.com"
-        secretName: aepp-test-repo-cert
+      - host: "pr-148-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-148"
+  serviceMonitor:
+    enabled: "false"
+  versions:
+    - version: "pr-148"
