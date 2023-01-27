@@ -15,4 +15,3 @@ app:
           - path: "/"
   serviceMonitor:
     enabled: false
-
