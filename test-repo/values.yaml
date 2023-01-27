@@ -22,3 +22,8 @@ app:
     "EPOCH_URL_DEBUG": "https://testnet.aeternity.io"
     "EXPLORER_URL": "https://explorer.testnet.aeternity.io"
     "NODE_URL": "https://testnet.aeternity.io"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
