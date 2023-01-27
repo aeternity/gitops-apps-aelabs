@@ -3,7 +3,7 @@ app:
     repository: aeternitybot/test-repo
     pullPolicy: "Always"
     tag: "latest"
-    
+
   resources:
     limits:
       memory: 72Mi
@@ -28,3 +28,7 @@ app:
     external:
       values:
         FAUCET_ACCOUNT_PRIV_KEY: /apps/FAUCET_ACCOUNT_PRIV_KEY
+  
+  imagePullSecrets: []
+  nameOverride: ""
+  fullnameOverride: ""
