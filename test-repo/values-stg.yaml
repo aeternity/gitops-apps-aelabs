@@ -1,9 +1,15 @@
 app:
   image:
-    repository: aeternitybot/test-repo
+    repository: "aeternitybot/test-repo"
     pullPolicy: "Always"
   ingress:
     hosts:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-150-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-150"
+  versions:
+    - version: "pr-150"
