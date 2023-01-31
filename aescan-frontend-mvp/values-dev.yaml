@@ -6,4 +6,4 @@ app:
           - path: "/"
             version: "develop"
   versions:
-    - {version: "develop", gitSha: "d1630c0"}
+    - {version: "develop", gitSha: "7e6e050"}
