@@ -14,5 +14,5 @@ app:
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
     "NODE_URL": "https://mainnet.aeternity.io/v3"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
-    "ALTERNATIVE_NETWORK_NAME": "Testnet"
+    "ALTERNATIVE_NETWORK_NAME": "TESTNET"
     "ALTERNATIVE_NETWORK_URL": "https://develop-aescan-frontend-mvp-testnet.dev.aepps.com"
