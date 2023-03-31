@@ -1,7 +1,6 @@
 app:
   image:
-    tag: "latest"
-    repository: "aeternitybot/aescan"
+    repository: "aeternity/aescan"
     pullPolicy: "Always"
   resources:
     limits:
