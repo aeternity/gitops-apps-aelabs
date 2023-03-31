@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "develop"
+    tag: "0.0.1"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
   resources:
