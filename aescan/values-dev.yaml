@@ -1,4 +1,9 @@
 app:
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
     hosts:
       - host: "aescan.dev.aepps.com"
