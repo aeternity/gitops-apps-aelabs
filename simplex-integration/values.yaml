@@ -1,0 +1,13 @@
+app:
+  nameOverride: simplex-integration
+  image:
+    repository: "aeternity/simplex-integration"
+    tag: "latest"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+  serviceMonitor:
+    enabled: false

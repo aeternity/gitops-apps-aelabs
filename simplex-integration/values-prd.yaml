@@ -1,0 +1,10 @@
+app:
+  ingress:
+    hosts:
+      - host: "simplex-integration.prd.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+        - "simplex-integration.prd.aepps.com"
+        secretName: simplex-integration-cert
