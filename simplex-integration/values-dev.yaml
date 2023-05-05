@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "simplex-integration.dev.aepps.com"
+        paths:
+          - path: "/"
