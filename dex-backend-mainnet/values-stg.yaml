@@ -8,6 +8,13 @@ app:
     AUTH_TOKEN: "AgDHqIT+M8zdAYVOqRJ4i4IMVE+pvf0LVFGwCjhNRHO5Yvj5k3jD32ZczO4T4/IGYtoAIf9gcne5uUdfZaV1z3VFP7FhXZxsmaW4sfndnr9iZ87IE6caDRnOm7mCKbOwsOX91qOQ2uhpIgmBbaIptzw6z1dc2eY5Kj9NhaHkjfr4enaQc5hkQcFDAUL9tufDdb0VypfgdaLLD0dRhQ9zk1DIznUViDYmS0fFa0vWAUONuII0K6c/zOdbgA+abtWB5l0ucxD9i4Fk5uxQBKc0T4FOMVFLwfqHGUxXNzeTYfe/A00HkeGmVaSJjgRu5UvdIPtOc83H8lVp1oQ9qneM5RRx08I/6OHpDArQf2n+Scy9vlMph+j6Ql4xwcyZW7TnkrkanEKD6OofSlfwPE3rH7Rp/t1G/MtdHlDd0H8tFNuPGOHiEnnwTdrQ7EDN2e8v9C2NNeTPGTZiJVnQ4Isjpr5+xB0KRAkaPLeRYEsx1CJIXL6zW70yn5r0xsd2m/Bcr8cbxNAeOE1V7tBh7eKIFCkIlJVMSYFEhOaw8W1TukpUKa8gIrA6bnIlMRpsxv2T+QVdMj9iotodC3K4VgrZnPdQe4hDQ7Xz6eDbStBfZGy0d00nqYKIrs8uvbTV+3KbLRb+7pzYQ7eNGRry8JH3575SxW2fCIQ6IFuuwWitvplb1i7nmj9l7fuwIwj0mRf12j7I99UBYTJKvu5xJZlvFGBRBM3CRoY2yYXyh9x3MMwi+Q=="
   service:
     port: 3000
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
   ingress:
     enabled: "true"
     hosts:
