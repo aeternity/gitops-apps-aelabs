@@ -34,7 +34,14 @@ app:
     readiness:
       enabled: false
   service:
-    port: 3000  
+    port: 3000
+  resources:
+    limits:
+      cpu: "2"
+      memory: "6Gi"
+    requests:
+      cpu: "1"
+      memory: "5Gi"
   ingress:
     enabled: true
     hosts:
