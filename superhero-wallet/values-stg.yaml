@@ -1,6 +1,11 @@
 app:
+  nameOverride: superhero-wallet
+  image:
+    repository: aeternity/superhero-wallet
+    tag: "latest"
   ingress:
+    enabled: true
     hosts:
-      - host: "superhero-wallet.stg.aepps.com"
+      - host: "superhero-wallet.stg.service.aepps.com"
         paths:
           - path: "/"
