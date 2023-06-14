@@ -1,10 +1,17 @@
 app:
+  nameOverride: simplex-integration
+  image:
+    repository: "aeternity/simplex-integration"
+    tag: "latest"
+    pullPolicy: "Always"
   ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
     hosts:
-      - host: "simplex-integration.stg.aepps.com"
+      - host: "simplex-integration.stg.service.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "simplex-integration.stg.aepps.com"
-        secretName: simplex-integration-cert
+  serviceMonitor:
+    enabled: false
