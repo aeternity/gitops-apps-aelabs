@@ -1,0 +1,14 @@
+app:
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  ingress:
+    hosts:
+      - host: "lqty.dev.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - {version: "develop", gitSha: "cc8e671"}
