@@ -15,7 +15,7 @@ app:
   serviceMonitor:
     enabled: false
   service:
-    port: 5173
+    port: 3000
   ingress:
     enabled: true
     annotations:
@@ -27,4 +27,4 @@ app:
           - path: "/"
             version: "develop"
   versions:
-    - {version: "develop", gitSha: "4cddbc4"}
+    - {version: "develop", gitSha: "205db21"}
