@@ -14,6 +14,8 @@ app:
       memory: 300Mi
   serviceMonitor:
     enabled: false
+  service:
+    port: 3000
   ingress:
     enabled: true
     annotations:
