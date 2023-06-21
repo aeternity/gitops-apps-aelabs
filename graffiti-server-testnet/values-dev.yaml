@@ -1,0 +1,54 @@
+encValues:
+  GRAFFITI_S3_SECRET: "AgAv/j5QExBq0WVbRyt4h2RWlUrnpGbZmpVRsz8J+v1s13sUAN+A1PGy7Fo8SopLntUWVfBMfTz1IHWOWKnbWNGrGEeES+legMcDCAKkCYRWStskDY1hVzR5NZtcr/VBI2GoF1VdzDZeeoWMZRRGEKDLhyyNaFLkoK+zQROLsxfG2JQ+DzK7f0wA6OnIs0NYi0+eeVYEuOG2EjIGgEeNky9pQstYF12c/l4UK2GEp3yfEgl8MkI1hd5H7eESJqKAj2/zeNds19NvBrp6qNGeYWA41SbkDzNyUjQT5TTwZgmPoioPhmpF7PGQsQ0zHHvMybc0pl8l7hUL/7S9Hl0MF90/Xg6Pd9M5Xj7jVGkZKZGvrz+uUJisK/Tlc/0aX+nhxcpX4vcBOvmL4PvHBMBRBDV8ts5BBPn306cDNtWCqYu5xc0NnmJ3+Y3Y7mDdpDQbytczQyl9PSld1bbAh6BXKuA67tcfhxz1Bi26Vnkg05iYDVPzbrarS0SxGhR60qipUNek8AUr9lqll8as3hHnF5Iy0meeb0pYZRN8buOlVQhASQUSASZzWV3Zzeb0dQ1hhJWqnQx9eFuBr3T5hB5YJvQLfWFx4egnWQD/IdY4wLuVnq0q1nCOaeSDS7pAtMUqCIcx7OKSO3Ub2MZ/S6MYYZORmWK4TKJtKUEgd4ejFHsUqUmkcL230fwcY7RZmsUjTsXHFiq6Oe75AAGFoqGdVO+r0O8WhJxQmraTE/rCiQNvzMVdlTtvEkSE"
+  GRAFFITI_S3_KEY: "AgBBVamuPieFVp4pFLrk1Kj5RHMVFgRPPkWlvdx7JF8HKJX7drPjMd/+sKLiN4/MPHlM+OIW1d/rPgLcWNUt784gxdcXSa7x8PO91xdxHcoaDcLtqMM6z7PzleoajP1gmJHhEfBHMxsSARSRYO584qyC3VmFbo9axM2HF/ZleaSTjdP2YFJIdIBfX4wTRyIOn83uti9R8CCxG+Rf4F5USpk1kRSybxUXETohPFIXJhCbMYIGoWX7SgREI3jzfLVdmdvRMoR2IxrH40NWjf6u+d0TVjEhQcmxahKcpV/KWL7BBdjazx+ZMKS4QKy6nNj7ivJtXOczkDj8bgri8b4AAliT4WQ29CWBZnMKNxGTPBgsyUSspM0w7+EFEVrJ4p1SgEWq6eZU+qqg3bBSgtkaeYkjs9kWVrcG1ejDUUc8M7zMh68FYNnXkLlnwYIjt0d/yLgluCT1TWbbebmNFhEDMhgBRT+Bno4bZu68FuLkJOYSMyjGS8DRZqHt9c6nOCahLZQrUBYyOP8dPbkwSz5BMsii2H4R8OG8xAN0k+Y1ojO0sxvCvFoHxFHakB4OASmsBKf3/YZzQ++PH9VCJmBp7ZvWT86iOK8hJllRRIWKdZG69Ul5GdjF4FH1r8RD8qHXyoDiQuGPuO4PeMiFrox3QErtmNI/pQEhIslW6UfSQTa10ufrZ2LTM7NhUTcUi+ZbXBrY4+nRN/m1S8QVw9uC+FemD7vLMg=="
+app:
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "graffiti-server-testnet.dev.service.aepps.com"
+        paths:
+          - path: "/"
+  strategyType: "Recreate"
+  image:
+    repository: aeternitybot/graffiti-server
+    tag: "latest"
+    pullPolicy: "Always"
+  resources:
+    limits:
+      memory: 288Mi
+    requests:
+      cpu: 200m
+      memory: 288Mi
+  service:
+    port: 3000
+  probes:
+    liveness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+    readiness:
+      enabled: false
+      config:
+        httpGet:
+          path: /health/testFiles
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
+  env:
+    "S3_REGION": "eu-central-1"
+    "NODE_URL": "https://testnet.aeternity.io"
+    "CONTRACT_ADDRESS": "ct_uJ5NKmuX7eX79QPerixR7Z8zEdxKCKJw1yzHjX1tsmRP17tuP"
+    "PATH_IDENTIFIER": "/"
+    "IPFS_URL": "http://ipfs.dev.service.aepps.com:5001"
+    "S3_BUCKET": "aeternity-superhero-graffiti-dev"
+  serviceMonitor:
+    enabled: false
