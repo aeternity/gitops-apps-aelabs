@@ -7,7 +7,18 @@ app:
       enabled: false
     readiness:
       enabled: false
+  resources:
+    limits:
+      memory: 500Mi
+    requests:
+      memory: 300Mi
+  serviceMonitor:
+    enabled: false
   ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
     hosts:
       - host: "lqty.dev.service.aepps.com"
         paths:
