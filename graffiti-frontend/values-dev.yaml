@@ -20,4 +20,5 @@ app:
       - host: "graffiti.dev.aepps.com"
         paths:
           - path: "/"
-
+  serviceMonitor:
+    enabled: false
