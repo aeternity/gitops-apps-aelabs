@@ -6,6 +6,6 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "superhero-wallet.stg.service.aepps.com"
+      - host: "superhero-wallet.prd.service.aepps.com"
         paths:
           - path: "/"

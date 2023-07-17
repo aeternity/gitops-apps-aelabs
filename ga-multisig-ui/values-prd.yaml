@@ -6,6 +6,6 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "ga-multisig-ui.stg.service.aepps.com"
+      - host: "ga-multisig-ui.prd.service.aepps.com"
         paths:
           - path: "/"

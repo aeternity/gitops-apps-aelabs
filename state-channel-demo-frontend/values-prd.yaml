@@ -6,7 +6,7 @@ app:
   ingress:
     enabled: "true"
     hosts:
-      - host: "state-channel-demo.stg.service.aepps.com"
+      - host: "state-channel-demo.prd.service.aepps.com"
         paths:
           - path: "/"
   probes:
