@@ -1,0 +1,37 @@
+app:
+  ingress:
+    hosts:
+      - host: "aescan.prd.service.aepps.com"
+        paths:
+          - path: "/"
+      - host: "aescan.io" # to be checked
+        paths:
+          - path: "/"
+      - host: "www.aescan.io" # to be checked
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "aescan.prd.service.aepps.com"
+          - "master-aescan.prd.service.aepps.com"
+        secretName: aescan-cert
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
+  image:
+    tag: 0.3.0
+  env:
+    "NUXT_PUBLIC_APP_DOMAIN": "aescan.io" # to be checked
+    "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
+    "NUXT_PUBLIC_NETWORK_NAME": "MAINNET"
+    "NUXT_PUBLIC_MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
+    "NUXT_PUBLIC_NODE_URL": "https://mainnet.aeternity.io"
+    "NUXT_PUBLIC_WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/v2/websocket"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "TESTNET"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://testnet.aescan.io"
+    "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com"
+    "NUXT_PUBLIC_AE_TOKEN_ID": "ct_J3zBY8xxjsRr3QojETNw48Eb38fjvEuJKkQ6KzECvubvEcvCa"
+    "NUXT_PUBLIC_PLAUSIBLE_DOMAIN": "aescan.io" # to be checked

@@ -1,0 +1,16 @@
+app:
+  ingress:
+    hosts:
+      - host: "graffiti.aeternity.com" # to be checked
+        paths:
+          - path: "/"
+      - host: "graffiti.prd.service.aepps.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "graffiti.aeternity.com"
+          - "graffiti.prd.service.aepps.com"
+        secretName: graffiti-cert
+  versions:
+    - {version: "latest", gitSha: "e41e204"}
