@@ -5,7 +5,7 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 900Mi
+      memory: 2Gi
     requests:
       memory: 500Mi
   ingress:
