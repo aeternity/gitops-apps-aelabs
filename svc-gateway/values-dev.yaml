@@ -1,0 +1,30 @@
+app:
+  image:
+    repository: "aeternity/smart-contract-verifier"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  resources:
+    limits:
+      memory: 500Mi
+    requests:
+      memory: 300Mi
+  serviceMonitor:
+    enabled: false
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "svc-gateway.dev.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - {version: "develop", gitSha: "8601d57"}
