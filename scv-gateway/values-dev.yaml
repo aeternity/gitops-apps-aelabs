@@ -1,4 +1,19 @@
 app:
+  encValues:
+    DB_PASSWORD: "AgCjbB+V7RjZCdr/7p/LolZwKJDqtpa5lpf28+5swrp1CDCxUIN+LSAgRzMb4/SKC7HoA2/6HeviPxByL1rVK0JuzWejS2g+PN0BSqPq3EZnK6qEVVgUeMG0RHj5+q4/q66atB6+g57xVgNW2I25eA/UV5fVvsUeRAAVkwCTKhAnG3fQCU5qOh9cZFrXeC4h9VtdLnnuLgxPKyq7BZIE4a8E1GTdHhgc8RUynHcTjxuv2hQWWfkM+h28gTJunOcPuK9JhS9VZfqboqaqzMeX464KkRr6Gv30RXcyHN/LZCXj7DTmope/gH7/vdQBCp5FGyJNAZUQuG5j42UsRckG4Yjq6l7CyGZ2+8Ews3ta51I/aYzXrliAoWoaMVxXKvULQ1FacVmDPvRBRBjs1Ql8M2Fs5SlARQpQ5p4UlblKAqq0CvAcTn1YZljGvdEzUTzY7CriwxvFWt9BZuUN1dKtsoLLhgAoStVhf0I1N1pC7EfP9KWRGd+D6srjxBi23LJ2yT0r7mEg6nusY9Fo3KWJYQvZq/Lxz4NzUd79tRK/8/hlyPe3mQCCTXjp9RdgOa0XaVOhjFfYA/rjdg2njJhkQOB7tP8Flr/vSkou1A32J6OhaicbF2ti9G7qw4cXFXO33aFYeatq0Sb7UNKap5va7O4+F0AJKCFI5jJqyvbNZh7wTEk0sV73uvuMuxH/Vbl7Dy/lGIvWgUz6S2Jn"
+  init: 
+    enabled: true
+    command: ["/bin/sh"]
+    args:
+      - -c
+      - >-
+        npm run migration:run
+  env:
+    "DB_SYNCHRONIZE": "false"
+    "DB_USERNAME": "scv-gateway"
+    "DB_NAME": "scv-gateway"
+    "DB_HOST": "pg-superhero-backend.prd.service.aepps.com"
+    "DB_PORT": "5432"
   image:
     repository: "aeternity/smart-contract-verifier"
     pullPolicy: "Always"
