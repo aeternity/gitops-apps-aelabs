@@ -12,7 +12,7 @@ app:
     "DB_SYNCHRONIZE": "false"
     "DB_USERNAME": "scv-gateway"
     "DB_NAME": "scv-gateway"
-    "DB_HOST": "pg-superhero-backend.prd.service.aepps.com"
+    "DB_HOST": "pg-superhero-backend.dev.service.aepps.com"
     "DB_PORT": "5432"
   image:
     repository: "aeternity/smart-contract-verifier"
