@@ -3,7 +3,8 @@ app:
     DB_PASSWORD: "AgCtE7eLKpQvmQ77LMmSwU6XMxIw97kT7z4PYVUfHmZAT8lbr7EkeKNlEre3SdJQELPortUnihBaSYro2+NR2yaV+g5T/qh1ck4+u3r59Z2WJhxP6JzEqOZwT9jr6gnlohckwlpQJGmKQogl3C3QQ48GS9/cGv3+3fMu3M7uwlFZevsdElR9yVLebQcO+N6Sx6jubiv4rajPkTypkd9Qsl/9o+KueJMcTqBVTEiVHoVcDkVubg6IWSu//l20maGMDce9eSrUEOcwrby/t/ZhRCcpwiab/iKUfwiSt+i5zKxFTpAK2HBshcJiQ71abOLe6QXCEYuMfi3E2Q4wE5A5+XLr7P6KxhjW2mzHKpxturdDtN9dq7HEUSaoZShZVvvD1kzPutQz0AS85QW2wYwZ4+mbbDn6M1X50y6jONOzQZL6qNzMKVKAhy/TuacqF8Mvfc3UYJr+cTh+EIq1YuT+zNnA+I+jDun5SuIc7naIFrveiVgMYafSN/0xhI8Toh1Ng6GDXPJID20J290SmOIVtxLehPhmPpOv4pEC3jBz8/YaF2H4DaihRYInWWvdf4WwREQnQMegHORAqodTM2VjitwHragAJxmVg9McBpmnXADiyoFcdGB7qKC8MO4y8ehw6AHluz29w5eiT9jYrpOh/dxcP5ZfEHxnLa+DUP4jTJZpkVJpecdeSWe+F5KVdUqBkbTeTzX8tInAWn97"
   init:
     enabled: true
-    command: "/bin/sh"
+    command:
+      - "/bin/sh"
     args:
       - -c
       - >-
