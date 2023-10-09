@@ -38,7 +38,7 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
     hosts:
-      - host: "svc-gateway.dev.service.aepps.com"
+      - host: "scv-gateway.dev.service.aepps.com"
         paths:
           - path: "/"
             version: "develop"
