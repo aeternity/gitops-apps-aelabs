@@ -5,10 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 164Mi
+      memory: 450Mi
     requests:
-      cpu: 30m
-      memory: 164Mi
+      memory: 300Mi
   secrets:
     external:
       values:

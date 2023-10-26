@@ -5,10 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 288Mi
+      memory: 450Mi
     requests:
-      cpu: 200m
-      memory: 288Mi
+      memory: 300Mi
   service:
     port: 80
   ingress:

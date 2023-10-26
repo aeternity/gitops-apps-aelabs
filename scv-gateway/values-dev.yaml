@@ -25,7 +25,7 @@ app:
       enabled: false
   resources:
     limits:
-      memory: 500Mi
+      memory: 4500Mi
     requests:
       memory: 300Mi
   serviceMonitor:
