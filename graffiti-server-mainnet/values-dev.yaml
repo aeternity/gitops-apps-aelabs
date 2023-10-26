@@ -19,8 +19,10 @@ app:
   resources:
     limits:
       memory: 450Mi
+      cpu: 150m
     requests:
       memory: 300Mi
+      cpu: 100m
   service:
     port: 3000
   probes:

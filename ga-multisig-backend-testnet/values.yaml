@@ -6,8 +6,10 @@ app:
   resources:
     limits:
       memory: 250Mi
+      cpu: 150m
     requests:
       memory: 150Mi
+      cpu: 100m
   probes:
     liveness:
       config:

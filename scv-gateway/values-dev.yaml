@@ -25,9 +25,11 @@ app:
       enabled: false
   resources:
     limits:
-      memory: 4500Mi
+      memory: 450Mi
+      cpu: 150m
     requests:
       memory: 300Mi
+      cpu: 100m
   serviceMonitor:
     enabled: false
   service:

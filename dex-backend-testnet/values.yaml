@@ -6,8 +6,10 @@ app:
   resources:
     limits:
       memory: 450Mi
+      cpu: 150m
     requests:
       memory: 300Mi
+      cpu: 100m
   secrets:
     external:
       values:
