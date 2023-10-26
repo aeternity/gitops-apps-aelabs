@@ -5,9 +5,9 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: "750Mi"
+      memory: 750Mi
     requests:
-      memory: 500Mi
+      memory: 500Mi"
   service:
     port: 80
   ingress:
