@@ -3,6 +3,11 @@ app:
     repository: aeternity/aepp-grafitti
     tag: "dev"
     pullPolicy: "Always"
+  resources:
+    limits:
+      memory: "750Mi"
+    requests:
+      memory: 500Mi
   service:
     port: 80
   ingress:
