@@ -6,10 +6,10 @@ app:
   resources:
     limits:
       memory: 450Mi
-      cpu: 150m
+      cpu: 450m
     requests:
       memory: 300Mi
-      cpu: 100m
+      cpu: 300m
   ingress:
     enabled: true
     annotations:
