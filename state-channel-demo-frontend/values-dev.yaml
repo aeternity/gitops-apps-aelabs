@@ -1,12 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "state-channel-demo.dev.aepps.com"
+      - host: "state-channel-demo.dev.service.aepps.com"
         paths:
           - path: "/"
-      - host: "develop-state-channel-demo.dev.aepps.com"
+      - host: "develop-state-channel-demo.dev.service.aepps.com"
         paths:
           - path: "/"
             version: "develop"
-  versions:
-    - {version: "develop", gitSha: "a31da01"}

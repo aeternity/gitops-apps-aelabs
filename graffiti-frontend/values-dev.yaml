@@ -16,7 +16,7 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
     hosts:
-      - host: "graffiti.dev.aepps.com"
+      - host: "graffiti.dev.service.aepps.com"
         paths:
           - path: "/"
   serviceMonitor:
