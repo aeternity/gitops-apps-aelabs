@@ -1,8 +1,4 @@
 app:
-  image:
-    tag: "develop"
-    repository: "aeternity/aescan"
-    pullPolicy: "Always"
   resources:
     limits:
       memory: 450Mi
