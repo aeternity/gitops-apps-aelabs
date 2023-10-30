@@ -4,7 +4,6 @@ app:
       - host: "aescan-testnet.dev.service.aepps.com"
         paths:
           - path: "/"
-            version: "develop"
   versions:
     - {version: "develop", gitSha: "bc2d7bd"}
   env:
