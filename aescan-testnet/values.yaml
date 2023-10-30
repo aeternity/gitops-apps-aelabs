@@ -1,4 +1,7 @@
 app:
+  image:
+    repository: "aeternity/aescan"
+    pullPolicy: "Always"
   resources:
     limits:
       memory: 450Mi
