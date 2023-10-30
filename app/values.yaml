@@ -80,7 +80,7 @@ autoscaling:
   # targetMemoryUtilizationPercentage: 80
 
 vpa:
-  enabled: true
+  enabled: false
 
 nodeSelector: {}
 
