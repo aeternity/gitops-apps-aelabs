@@ -23,4 +23,4 @@ app:
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
   versions:
-    - {version: "develop", gitSha: "d4e4e9e"}
+    - {version: "develop", gitSha: "9dbff7e"}
