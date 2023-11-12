@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "latest"
+    tag: "v1.18.1"
     pullPolicy: "Always"
   ingress:
     enabled: "true"
@@ -8,3 +8,5 @@ app:
       - host: "dex.prd.service.aepps.com"
         paths:
           - path: "/"
+  versions:
+    - {version: "main", gitSha: "6895935"}

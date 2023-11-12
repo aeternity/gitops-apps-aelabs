@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternitybot/dex-backend-testnet
-    tag: "latest"
+    tag: "v1.0.0"
     pullPolicy: "Always"
   encValues:
     POSTGRES_PASSWORD: "AgApjuYculF3a3uhVMYcl/l9jIgxoe4dPlpFqHDsWVk+auRXnoJRxqOp2SwzjKOqCN59JC6Olb6UqwfCvxmzhxWBRIR7YniejtEF+cA3t/wEvIEga7caoNmjU6UtGqC7gFo3eVmOFJm7UO2JtsdIKe13xFP2Gi9lIwJWCTyLx2CJ1hUF9Mb6OFDcNehKSG94qOZTFLUvFrMgDeQ6XEwHGW7iXYneGiyg3Zl1WvW4czO+wzXvK7T1udeL6Gcf5oZ16hgj2HExIoL/vzXXCvL6bkyfTkhi+QUsK+CG7CiqNIgkNmXp0r/D+x7OBEZlkNHFKU2YGDv7G6yn1nnZkcjKgZTzkQw59jfBAHc1Dnotj5xf7yOBco0+oQR+NcU3ih84/Lcp+OHee+YZqEvJIqzLvr2YUYtHmxBxtAwUqt3sMBd0Er68uhodXCi//SPvAkW9iLYYb+ybHBiCaGp6FGB88IpCjBH3aRMHHH/3ubOZuzN8VGh1YwTXD8ekhoxqZkiD4sQEdbEApAzOiJsl7U4f7MWnyjJgq8ZJzMX9c59WPtWbTsJmPx5gsPuGDwHvcCrxQJYgNmTlubtxSOeWZttyxIRWSBUTCrWnCIzxHewiE3O0GSRXZHl4ItP8O70i8N9ze2CFul9ahllFZs9qfwNDekd29/rBug4UjvjuKi9nwr2dztuGGv3KnBCz8QGbm6Y7pdBjSNJQc6sg5qI7J14="

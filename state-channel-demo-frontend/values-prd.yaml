@@ -9,8 +9,14 @@ app:
       - host: "state-channel-demo.prd.service.aepps.com"
         paths:
           - path: "/"
+      - host: "statechannel.aepps.com"
+        paths:
+          - path: "/"
+        version: "latest"
   probes:
     liveness:
       enabled: false
     readiness:
       enabled: false
+  versions:
+    - {version: "latest", gitSha: "1c90e48"}

@@ -1,7 +1,7 @@
 app:
   image:
     repository: aeternitybot/dex-backend-mainnet
-    tag: "v1.0.0"
+    tag: "v1.0.1"
     pullPolicy: "Always"
   encValues:
     POSTGRES_PASSWORD: "AgBqMchMc5agKpzQN7XgBxSgKWEY/r9JH1WzlVYV285XdhOurbrkrsqEeJ9EQnp6COg65wTbLvypFiQTLm7fewq6RU558nBwXGC3YnvwzNBlwdXFQTyeRcb0pJ31es7YpNa0BEwZO9V2phQuZcPjHElxM0m2R8pcbUPOw4MIhLugpcH1e21nKSGgT6kDVMrY8O/mar45g7duNsNG7utQe6RUO9eVtTgxKiUOVzYpivvj0EeqLy0EwscZGDTyDFNhkeZVEAR8+wJM09Ric75ZKk035TVC/4yfgCWOEuvcG4o3qXi0vI8BM+eH6CYHv54LELKuXzwObFWqcdTnMOGKHIPCuVRgvp9wd5DqHNbBSNqME3qso9lI9AWEc/SzaRrv5gsMPT6M2HoyLQMFoiE6WBEqttPzoqRwPcfYBuHSouv/u1Xxt9oJcORBjXRp9JeJ1C0XI2luKUOeJw11qUsxcVVbCFhQ0bZkbJJXAnOv91LV3Y+XO6eufXu3bo7ktmcAH8ga9uD1rgxR2ZulcD7DtZUWbVPMnBzOe3K0Z7nvRRK5t4IgT+XDKdRKDy/aaPTNkpQVAnXjq0dRfC0g5hh4ov52VH8yd/nHeLgQHLzgX/BWhRlTkiADufy7y5dkYQNXHxwlXzEVYUobF8e4zaA0KACsmq2wqhjRmBZovnk4yLxt+opTOjTk6dxFmcw+OmdcZAAjLwy4Fi0A/bN3arA="

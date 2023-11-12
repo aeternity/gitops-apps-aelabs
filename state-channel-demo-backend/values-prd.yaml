@@ -30,7 +30,7 @@ app:
     "BOT_SERVICE_PORT": "3000"
     "NETWORK_ID": "ae_uat"
     "NODE_URL": "https://testnet.aeternity.io"
-    "WS_URL": "wss://sdk-testnet.aepps.com/channel"
+    "WS_URL": "wss://testnet.aeternity.io/channel"
     "NODE_ENV": "testnet"
   serviceMonitor:
     enabled: false
