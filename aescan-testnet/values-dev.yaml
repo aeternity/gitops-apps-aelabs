@@ -4,19 +4,17 @@ app:
       - host: "aescan-testnet.dev.service.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: "develop", gitSha: "03c8979"}
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   requests:
     cpu: 300m
     memory: 450Mi
   limits:
     cpu: 4500m
     memory: 6000Mi
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.dev.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -29,3 +27,5 @@ app:
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.aepps.com"
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
+  versions:
+    - {version: "develop", gitSha: "9dbff7e"}
