@@ -1,13 +1,15 @@
 app:
   image:
-    tag: "latest"
-    repository: "aeternitybot/aescan-frontend-mvp"
+    tag: "0.0.1"
+    repository: "aeternity/aescan"
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 64Mi
+      memory: 750Mi
+      cpu: 150m
     requests:
-      memory: 64Mi
+      memory: 500Mi
+      cpu: 100m
   ingress:
     enabled: true
     annotations:
