@@ -4,7 +4,7 @@ app:
       - host: "aescan-testnet.dev.service.aepps.com"
         paths:
           - path: "/"
-        version: "develop"
+            version: "develop"
   probes:
     liveness:
       enabled: false
