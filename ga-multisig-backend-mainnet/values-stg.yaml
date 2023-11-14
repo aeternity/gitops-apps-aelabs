@@ -8,10 +8,10 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 150Mi
+      memory: 450Mi
     requests:
-      cpu: 300m
-      memory: 150Mi
+      cpu: 1
+      memory: 3000Mi
   service:
     port: 3000
   serviceMonitor:
