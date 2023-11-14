@@ -11,7 +11,7 @@ app:
       memory: 450Mi
     requests:
       cpu: 1
-      memory: 3000Mi
+      memory: 300Mi
   service:
     port: 3000
   serviceMonitor:
