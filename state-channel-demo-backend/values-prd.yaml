@@ -11,11 +11,6 @@ app:
         paths:
           - path: "/"
         version: "latest"
-    tls:
-      - hosts:
-          - "state-channel-demo-backend.prd.service.aepps.com"
-          - "main-state-channel-demo-backend.prd.service.aepps.com"
-        secretName: state-channel-demo-backend-cert
   env:
     "NODE_ENV": "production"
   versions:
