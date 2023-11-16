@@ -1,22 +1,18 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/state-channel-demo-frontend"
-    pullPolicy: "Always"
   ingress:
-    enabled: "true"
     hosts:
       - host: "state-channel-demo.prd.service.aepps.com"
         paths:
           - path: "/"
+        version: "latest"
       - host: "statechannel.aepps.com"
         paths:
           - path: "/"
         version: "latest"
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
+    tls:
+      - hosts:
+          - "state-channel-demo.prd.service.aepps.com"
+          - "statechannel.aepps.com"
+        secretName: state-channel-demo-frontend-cert
   versions:
     - {version: "latest", gitSha: "1c90e48"}

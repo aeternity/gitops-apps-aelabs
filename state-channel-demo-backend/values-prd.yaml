@@ -1,36 +1,22 @@
 app:
-  image:
-    tag: "latest"
-    repository: "aeternitybot/state-channel-demo-backend"
-    pullPolicy: "Always"
   resources:
     limits:
-      memory: 80Mi
+      memory: "3Gi"
     requests:
-      memory: 80Mi
-  service:
-    port: 3000
+      cpu: "1"
+      memory: "2Gi"
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
     hosts:
       - host: "state-channel-demo-backend.prd.service.aepps.com"
         paths:
           - path: "/"
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
+        version: "latest"
+    tls:
+      - hosts:
+          - "state-channel-demo-backend.prd.service.aepps.com"
+          - "main-state-channel-demo-backend.prd.service.aepps.com"
+        secretName: state-channel-demo-backend-cert
   env:
-    "COMPILER_URL": "https://compiler.aepps.com"
-    "FAUCET_PUBLIC_ADDRESS": "ak_2iBPH7HUz3cSDVEUWiHg76MZJ6tZooVNBmmxcgVK6VV8KAE688"
-    "BOT_SERVICE_PORT": "3000"
-    "NETWORK_ID": "ae_uat"
-    "NODE_URL": "https://testnet.aeternity.io"
-    "WS_URL": "wss://testnet.aeternity.io/channel"
-    "NODE_ENV": "testnet"
-  serviceMonitor:
-    enabled: false
+    "NODE_ENV": "production"
+  versions:
+    - {version: "latest", gitSha: "1c90e48"}
