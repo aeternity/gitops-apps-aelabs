@@ -8,7 +8,5 @@ app:
         paths:
           - path: "/"
             version: "develop"
-  env:
-    "NODE_ENV": "production"
   versions:
     - {version: "develop"}
