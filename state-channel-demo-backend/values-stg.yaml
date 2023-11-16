@@ -1,10 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "state-channel-demo-backend.stg.aepps.com"
+      - host: "state-channel-demo-backend.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-265-state-channel-demo-backend.stg.aepps.com"
+      - host: "pr-265-state-channel-demo-backend.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-265"
