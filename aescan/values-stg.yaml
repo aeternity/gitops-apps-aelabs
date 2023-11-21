@@ -9,11 +9,11 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-590-aescan.stg.aepps.com"
+      - host: "pr-590-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-590"
-      - host: "pr-591-aescan.stg.aepps.com"
+      - host: "pr-591-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-591"
