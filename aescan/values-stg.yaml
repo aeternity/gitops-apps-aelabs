@@ -1,14 +1,18 @@
 app:
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   ingress:
     hosts:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-589-aescan.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-589"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -21,3 +25,5 @@ app:
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.aepps.com"
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_J3zBY8xxjsRr3QojETNw48Eb38fjvEuJKkQ6KzECvubvEcvCa"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW, ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
+  versions:
+    - version: "pr-589"
