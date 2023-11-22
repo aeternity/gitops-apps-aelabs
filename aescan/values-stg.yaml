@@ -17,10 +17,6 @@ app:
         paths:
           - path: "/"
             version: "pr-591"
-      - host: "pr-597-aescan.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-597"
       - host: "pr-598-aescan.stg.aepps.com"
         paths:
           - path: "/"
@@ -44,6 +40,5 @@ app:
   versions:
     - version: "pr-590"
     - version: "pr-591"
-    - version: "pr-597"
     - version: "pr-598"
     - version: "pr-599"
