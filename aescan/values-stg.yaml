@@ -17,27 +17,27 @@ app:
         paths:
           - path: "/"
             version: "pr-591"
-      - host: "pr-598-aescan.stg.aepps.com"
+      - host: "pr-598-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-598"
-      - host: "pr-599-aescan.stg.aepps.com"
+      - host: "pr-599-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-599"
-      - host: "pr-600-aescan.stg.aepps.com"
+      - host: "pr-600-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-600"
-      - host: "pr-598-aescan.stg.aepps.com"
+      - host: "pr-598-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-598"
-      - host: "pr-601-aescan.stg.aepps.com"
+      - host: "pr-601-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-601"
-      - host: "pr-599-aescan.stg.aepps.com"
+      - host: "pr-599-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-599"
@@ -49,7 +49,7 @@ app:
     "NUXT_PUBLIC_NODE_URL": "https://mainnet.aeternity.io"
     "NUXT_PUBLIC_WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/v2/websocket"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "TESTNET"
-    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-testnet.stg.aepps.com"
+    "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan-testnet.stg.service.aepps.com"
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.aepps.com"
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_J3zBY8xxjsRr3QojETNw48Eb38fjvEuJKkQ6KzECvubvEcvCa"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW, ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
