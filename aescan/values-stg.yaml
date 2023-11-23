@@ -58,5 +58,4 @@ app:
     - version: "pr-599"
     - version: "pr-600"
     - version: "pr-598"
-    - version: "pr-601"
     - version: "pr-599"
