@@ -55,7 +55,6 @@ app:
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW, ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
   versions:
     - version: "pr-590"
-    - version: "pr-591"
     - version: "pr-598"
     - version: "pr-599"
     - version: "pr-600"
