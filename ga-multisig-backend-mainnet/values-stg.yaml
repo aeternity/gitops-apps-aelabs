@@ -40,7 +40,7 @@ app:
         paths:
           - path: "/"
     tls:
-      - hosts: "pr-16-ga-multisig-backend-mainnet.stg.aepps.com"
+      - hosts: "ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     "PG_DB": "ga-multisig-backend-mainnet"
     "PG_PORT": "5432"
