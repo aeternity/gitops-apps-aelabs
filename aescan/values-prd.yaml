@@ -17,13 +17,13 @@ app:
         secretName: aescan-cert
   resources:
     limits:
-      memory: 2000Mi
+      memory: 4000Mi
       cpu: 750m
     requests:
       memory: 1000Mi
       cpu: 500m
   image:
-    tag: 0.8.0
+    tag: 0.10.0
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
