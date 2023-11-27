@@ -21,18 +21,18 @@ app:
       config:
         httpGet:
           path: "/health"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
     readiness:
       config:
         httpGet:
           path: "/health"
-        initialDelaySeconds: "120"
-        periodSeconds: "120"
-        successThreshold: "1"
-        timeoutSeconds: "60"
+        initialDelaySeconds: 120
+        periodSeconds: 120
+        successThreshold: 1
+        timeoutSeconds: 60
   ingress:
     enabled: "true"
     hosts:
@@ -46,4 +46,4 @@ app:
     "PG_HOST": "pg-superhero-backend.stg.service.aepps.com"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
     "NODE_URL": "https://mainnet.aeternity.io"
-  versions: []
+
