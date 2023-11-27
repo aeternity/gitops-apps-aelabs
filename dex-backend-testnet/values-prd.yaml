@@ -10,10 +10,11 @@ app:
     port: 3000
   resources:
     limits:
-      memory: "2Gi"
+      memory: 3500Mi
+      cpu: 1500m
     requests:
-      cpu: "1"
-      memory: "2Gi"
+      memory: 2000Mi
+      cpu: 1000m
   ingress:
     enabled: "true"
     hosts:
