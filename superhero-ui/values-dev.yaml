@@ -1,6 +1,6 @@
 app:
   ingress:
     hosts:
-      - host: "superhero.dev.aepps.com"
+      - host: "superhero.dev.service.aepps.com"
         paths:
           - path: "/"
