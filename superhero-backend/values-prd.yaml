@@ -39,10 +39,10 @@ app:
   resources:
     limits:
       memory: 3500Mi
-      cpu: 1500m
+      cpu: 1000m
     requests:
       memory: 2000Mi
-      cpu: 1000m
+      cpu: 500m
   ingress:
     enabled: true
     hosts:
