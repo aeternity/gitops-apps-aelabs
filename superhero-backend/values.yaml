@@ -1,32 +1,10 @@
 app:
-  image:
-    tag: "latest"
-    pullPolicy: "Always"
-  resources:
-    limits:
-      memory: "750Mi"
-    requests:
-      memory: 500Mi
-  probes:
-    liveness:
-      enabled: false
-    readiness:
-      enabled: false
-  secrets:
-    external:
-      values:
-        POSTGRES_PASSWORD: /apps/SUPERHERO_POSTGRES_PASSWORD
-        AUTHENTICATION_PASSWORD: /apps/SUPERHERO_AUTHENTICATION_PASSWORD
-        PRIVATE_KEY: /apps/SUPERHERO_PRIVATE_KEY
-  service:
-    port: 3000  
-  ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
+  encValues:
+    POSTGRES_PASSWORD: "AgAvxs7p9WRm28BQjJ5lhLoykz1zB22fDR+rGd9GUEmSxu8c1ORiRReB+/8+aMV9+wej1Qc7JPcqr+TvatIKX+q2Lgbwc1qz6zzl1gQFyZyA++5Gqo4GZHYRHIfUx5Z8V14OB68rG+0cOpa7sq0XAl/vtiBNKhQKeH9WkscSBOijBlcanvMy/bYNwUg7Uu/YfNnnF+QRBvZuRBryZ/oyzDf36H744Axd3L/YTLJ+dCWAIHvJkQKyiWNsqhr0omgrHw/yGNBkWrcvX5SIuSS4vBcz8PMdiGQgb1cgKEKoScVeHBXdUUmxZYDKtKpwdKOsJ26KYVdk+6Uzvu75VitSlP+lN/dJ1fCE2QYEuqlK4MUTIdYbnpdmaXqUZjq1ryNibOEhMAMpnCngTdHjtvB+tMsC+A7h54Gjgi3Dqx1x8gbVk5pih1oGpq9w+KP8yadlpEU/OZnvW1AjUloyIkK1zYu9H+NiO6GS2C1avgF//TAcjbyVXhYJpUdQT8c929CW56l5b/cg6pCKo40lDmQMOfNZ8o8AgU7OsrMwVMy44NOTsd1J+IDFVxc4hMrjV8XFCZcqNkkdQvTkwPXP/sXZ/GgZGazgj2ruzrXe5RxunK10+q6nc57PJau1FeO4n3zdQwPmOT1NXM+du+2AS+6crWUlUc64yfx3dAXJn1MYF0RuB5xdYW1Oio5GgBcn2wRK0m15RKyljeer2JBWkOs="
+    AUTHENTICATION_PASSWORD: "AgAuxvbhv0bZLt5qr0UqmSBPtXhTYcPIGABZV/2ZZlR+eDr167OszaAei6MaAxBLtdhCJ1stllPBrW39F5x/VhaEPGbqwHhmxsZ5KeE32jmfVKCTTgVcJ46CLVK3OgOLAFHti78YP861b0zGHU+zcLKvtwC/a6iTs2to9QXe/9bqt8B3g7u7PGHcxO4aOfgxQFZ0OSxBgFxjNQBrYL9gEcUb1CPlgQ3ryHLjmdTSM8E8kEHZOJP1Z5LZE+TD/JAXcUnuRj/6iVVxQTX2lPSa6iYakiuzJvT8t+Zgz6YEajCM0eSenKLscu1/OHUk1CwBWW11vgozm1uhwHvxHVVF++mixAtTSrk7ySGoTHUrjL7Q19AcB9t1/qvTsoD+ScO8uSCQgMfQoSycpyMtpWVMOKSAcPNH0pooEer+xU7iSRm6mJRd9KqZOQSU2CXDgNPuPTnSmr60jU8oY/cWG4+BWbdT1o3fNI5gDHluVijIw2gQuMYsP64Kn3yl1flkvi24r0DMVFi5RzBVaEoOD7/Wu/3ltPOLGhKaSMmYeCz1JanO+ot5uhFqcN6wuSjyT9A/o0yQ2Zyvh6KAcwdjX9YWLre4oQvoiyqdQPj+ZZr8mYMGUHlaAunrCsIu6uFmZDYSsqY7EZOjiukKkX7uCwflT0NRnPi1GuNcEcz6RE00LIp+gkmdMKDIoTB3IB604ewZlj0PvqZQpIVx/qlJISh+/kd9"
+    PRIVATE_KEY: "AgAvbUVxI9z+/ASosP9i6WS0sReHjF9L1r4oFMKS3mb6EpVScQHnzXLnvSape8WYYEle51C4bsJ/6mk4DIq7J48WhBYtQa2RPSZQeEKHXP+UXNztQ85upv80d/zCPlLsaHBJwXPqN1z9j7NvW3W6osHHDXzNDZOC95Z7DPKsx5K9I2nLIng7TrjVYwIWoHXeU85JYIzq7HPZvji4sMOIJZrnAgNacU/yS/wevxn72VO+7W4Tc1c6epsN87gbX1Cc1MiJC4/a+RusZ06ILCbUW0s5b9EA1BCHsFm0pO98tTVuMRGPwrdmmdIBKVyaOBICk/8Ahoji58jryk1gyTE1gIw1mpKFdcoegz4dIERBo40eadC1w7c53Z8VFyjAi/OH7VTofbl+4JZY/vTVBxgoydbTEXsdSSN+xr/G8lN6EINXdJugra7CargAsHnkFVVm6gTSQZuPp/MdNOtiHz+D7jxa3cjTAlxXfRweTCgdn8PRe6ujtQSSI1RQ/kEWUaVP9MzT2XeSgLpK5BEdI5a7xWKrp3I+FQPQWF9bLupW3TLXbx+QasPhCHX66qM4aUVhKxajO8wvme8xzAHkCHPh/wo8ArB1bijepPJHI4Fsia2lOi03SqZIxHpfi3S0UoZpyd2yq/R+S9PnlUKwpe8IVyGNrGL1VKIuBS+Ml+ZrpX2amyIcppobqsDqbk/QZl3SeBFKRW52t3syBccF+JbiEhXi4GCjwtGtjNz2umD5nJTzlr/w+MQf9u6ev5KSa3s7laFFQLEzaYfG1HPC2gjiwcWx/qqUeryCERfLtcfH7DC69SFrYTbpNax/RpCc30cAKTCNMjQW+Sw7hKn0kegE0NV80AWth0/ZbI61044qF2FcJw=="
   env:
-    "REDIS_HOST": "10.0.1.11"
+    "REDIS_HOST": "10.0.2.6"
     "REDIS_PORT": "6379"
     "NODE_URL": "https://mainnet.aeternity.io"
     "COMPILER_URL": "https://latest.compiler.aepps.com"
@@ -35,16 +13,39 @@ app:
     "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
     "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
-    "IPFS_URL": "http://ipfs.dev.aepps.com:5001"
-    "PUBLIC_KEY": "ak_yrVCHP97UWfCRGMCaojBjdSKuXD3yyC8NkzkReURd4t3jbCQW"
-    "AUTHENTICATION_USER": "user"
+    "IPFS_URL": "http://ipfs.dev.service.aepps.com:5001"
+    "PUBLIC_KEY": "ak_HryHrgaVUSxezLQBfNENhptKeXk6tpg4kjWBk88nsU5RJvhNk"
+    "AUTHENTICATION_USER": "admin"
     "NODE_ENV": "production"
     "WEBSOCKET_URL": "wss://mainnet.aeternity.io/mdw/websocket"
     "ORACLE_GETTER_ADDRESS": "ct_anbp2U5VUsF6PkrX1ER1hSqj76Krpvqy97c5JBLmubBecCWui"
     "CONTRACT_V1_GETTER_ADDRESS": "ct_NR7Bd7j5LRdzvKZmrMagMkfxzG8ZPWseKQkdwWootpq4kAJY2"
     "CONTRACT_V3_GETTER_ADDRESS": "ct_2NdZ6PX9tZHWFhgcoYjthYNFF15qxjDwFSsNXRPeajEWazxkTo"
-    "POSTGRES_USER": "postgres"
-    "POSTGRES_DB": "superhero"
-    "POSTGRES_HOST": "superherodev.cxhy2i9at0vj.eu-central-1.rds.amazonaws.com"
-  serviceMonitor:
-    enabled: false
+    "POSTGRES_USER": "superhero"
+    "POSTGRES_DB": "superhero_backend"
+    "POSTGRES_HOST": "pg-superhero-backend.dev.service.aepps.com"
+    "POSTGRES_SSL": "false"
+  image:
+    repository: aeternity/superhero-backend
+    tag: "latest"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  service:
+    port: 3000
+  resources:
+    limits:
+      memory: 3500Mi
+      cpu: 1000m
+    requests:
+      memory: 2000Mi
+      cpu: 500m
+  ingress:
+    enabled: true
+    hosts:
+      - host: "superhero-backend.dev.service.aepps.com"
+        paths:
+          - path: "/"
