@@ -9,7 +9,7 @@ app:
     args:
       - -c
       - >-
-        npm run migration:run
+        npm run --dataSource=apps/scv-gateway/src/database/data-source.ts migration:run
   env:
     "DB_SYNCHRONIZE": "false"
     "DB_USERNAME": "scv-gateway"
