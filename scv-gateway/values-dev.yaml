@@ -16,7 +16,7 @@ app:
     "DB_NAME": "scv-gateway"
     "DB_HOST": "pg-superhero-backend.dev.service.aepps.com"
     "DB_PORT": "5432"
-    "MQ_HOST": "rabbitmq.rabbitmq.svc.cluster.local"
+    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
     "MQ_PORT": "5672"
     "MQ_USERNAME": "admin"
     "AE_MDW_URL": "https://mainnet.aeternity.io/mdw"
