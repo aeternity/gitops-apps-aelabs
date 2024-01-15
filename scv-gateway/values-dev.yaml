@@ -9,7 +9,7 @@ app:
     args:
       - -c
       - >-
-        npm run schema:drop && npm run migration:run
+        npm run migration:run
   env:
     "DB_SYNCHRONIZE": "false"
     "DB_USERNAME": "scv-gateway"
@@ -51,4 +51,4 @@ app:
           - path: "/"
             version: "develop"
   versions:
-    - {version: "develop", gitSha: "9d2eb3f"}
+    - {version: "develop", gitSha: "571c08c"}
