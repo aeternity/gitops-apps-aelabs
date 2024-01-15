@@ -1,0 +1,49 @@
+app:
+  encValues:
+    WORKER_PRIV_KEY: "AgBLL3KYZVYE8AxhSpm356fdgSOXHWdCwOzLVZVdkMz/zPJpSVl94d9rpLUbWpNcwAHank2yvwXuvSdjvAb2cjRVTzhYCH4Fc3kWhkRd7OZlli8/E1eYzSp1beZhOqxNrq2oDc32S46VAslJyqsDp0Wf3T2Pj13gMK55L9HREMFb67DaluBC680sEJLcLZjRbpQX5xKfyAPG2RJkJLoJyd4ZP8MYaA9s5kZ+YHy8ipNr+iM4/q8PFaMp5nj1KMzpfT5QIKSBoAgDYZLvQIUW6S/qUkNe68ItoGaxtxIlIodOFKQZOUaN5qKQmfpc3auKhgAfwd2EPu6l23o60CZAVSESZzcYY2+LV8t0qJWzzIq2dniIaZ5ZWLFGmnwvxDxU84sHqkxcSbp41icAzDz7d/8aSrDn+4Suo5sZazqYjCUFMuCeQn5aSKaiTKa6iF09FCYikuwq4O1kH8+pa9wyihxsHEbZNvH7+cafNLTqOuqzyqa/2VIYAf115oK6YhPk182WtFav2RoMUI7vAvCWfb20qvbEyFwHFoXUZkNkAaJmA1d0RxjQhZlIdGqKw0rhqvt2KxNz9aEWmvEO3IB/TpnnQ1rduZpq8SGNJl3HzVJAu+zFaP+wh4GBTBCijhK/Lmoe6RE999mc9Rxg+PJz656m0qkWG2NPwIbR4tAXIbzu1lan2b1MyedayBjmHCVKJyrp5DuYACSgxOkuG5BbSXdnlbDFIXCZ3x81ofqMZG4O5hcNmNeILVkVOL0KK2+3xesFRkPGJbhoWfvM0enwstiYfy9TQ8mQUq9bC/3a91Z9BRFr1uo3ejJv0ivWOZCtCa60BnMQv2ds+gcuVaFmhyhtqUWtbCyHr/YQ0u1EDyDnzDHU9E3PvMNV7UFwhk3TenRYnErItVtFTxEpaWFHQfi9VWK08jdZigvgdkdNrV4pq0EKVr8/T66r0Na1d+uQ8CL3v4lPuhsAaB8N/ijw/Szsn1vMZsNxa0iWCcLGYynBT9UMuQXC07W75SNM2k6InpufTY9N6UAi7F6ioZqOkcBXK58u51FLPAIbGt5DyuXo"
+    MQ_PASSWORD: "AgB7eAaCeoGWPDchYPi6FFxh+z0aRv6rm+6r76srMWTZ3uCevBit50fwIs13QZALTZZOylHNt95t4e2DlNjZ1SR9PlOmOUQINFU0NYajwavTJICJxCT1psiDMilXJ9usAYqyeYDnADymUf2TSRw3ymxnpiU0U28CrhXb+uzVr71ytMnwsNumLhbosd9rWmuC+YTf+zYfkW2iBK/X9ztdtrdJ+by3RwfPJJdaN7xWhpWJqmwk4YdT/4aLD2r6mADiHDGuT+znpudOwKCQzpfMMb/x1Q19RF4RuMOxLVetF3bi1j65mJeNMbiVXZiHZIIGnxYcPVBcJdXanTAEvmlM2X9rijOybmPL3aeNeY01/f4x2TAFkBFTRFNuTYDCL/fpjyoKZ92S4D5CZ/BerC3mOUjJwH3sfHb6qZNoBs7byLxC3iiJiUWwF2TuadRsSG48G9P11+VSATiqaJc3bW9AGnZgH47OKJ5/h13G4qt0OHGwST8uW2lT25SzMJivYrsGS13BO8ogUrj6SckLRH1ok0cmoDPzyFyRDWg0ybINuM/NSMMxF1hnQxtz8/hIc/XQlFsAlEstZSf9q9YRywizXwH/yPGQrCr8EXpK+/gcqaHBEzuu1kaspfzjiEu1DNpJ/EXn7BthH8OIMStEJauTKN0EZ/VsKfrZyxckQy+GZ51dv6jbZvB7WqD/T9PU9G+WABhD9ddspK6gFlz1hbYQOfU82AkXDcyc9cK2YYrYLPeZng=="
+  init:
+    enabled: true
+    command:
+      - "/bin/sh"
+    args:
+      - -c
+      - >-
+        npm run migration:run
+  env:    
+    "DB_PORT": "5432"
+    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
+    "MQ_PORT": "5672"
+    "MQ_USERNAME": "admin"
+    "GATEWAY_API_URL": "http://scv-gateway-app-develop.apps.svc.superhero-dev:3000"
+  image:
+    repository: "aeternity/smart-contract-verifier"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  resources:
+    limits:
+      memory: 450Mi
+      cpu: 150m
+    requests:
+      memory: 300Mi
+      cpu: 100m
+  serviceMonitor:
+    enabled: false
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "scv-gateway.dev.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - {version: "develop", gitSha: "6186181"} # has to be changed to valid sha
