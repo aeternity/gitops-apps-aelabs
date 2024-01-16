@@ -4,12 +4,6 @@ app:
     MQ_PASSWORD: "AgB7eAaCeoGWPDchYPi6FFxh+z0aRv6rm+6r76srMWTZ3uCevBit50fwIs13QZALTZZOylHNt95t4e2DlNjZ1SR9PlOmOUQINFU0NYajwavTJICJxCT1psiDMilXJ9usAYqyeYDnADymUf2TSRw3ymxnpiU0U28CrhXb+uzVr71ytMnwsNumLhbosd9rWmuC+YTf+zYfkW2iBK/X9ztdtrdJ+by3RwfPJJdaN7xWhpWJqmwk4YdT/4aLD2r6mADiHDGuT+znpudOwKCQzpfMMb/x1Q19RF4RuMOxLVetF3bi1j65mJeNMbiVXZiHZIIGnxYcPVBcJdXanTAEvmlM2X9rijOybmPL3aeNeY01/f4x2TAFkBFTRFNuTYDCL/fpjyoKZ92S4D5CZ/BerC3mOUjJwH3sfHb6qZNoBs7byLxC3iiJiUWwF2TuadRsSG48G9P11+VSATiqaJc3bW9AGnZgH47OKJ5/h13G4qt0OHGwST8uW2lT25SzMJivYrsGS13BO8ogUrj6SckLRH1ok0cmoDPzyFyRDWg0ybINuM/NSMMxF1hnQxtz8/hIc/XQlFsAlEstZSf9q9YRywizXwH/yPGQrCr8EXpK+/gcqaHBEzuu1kaspfzjiEu1DNpJ/EXn7BthH8OIMStEJauTKN0EZ/VsKfrZyxckQy+GZ51dv6jbZvB7WqD/T9PU9G+WABhD9ddspK6gFlz1hbYQOfU82AkXDcyc9cK2YYrYLPeZng=="
   init:
     enabled: false
-    command:
-      - "/bin/sh"
-    args:
-      - -c
-      - >-
-        npm run migration:run
   env:
     "DB_PORT": "5432"
     "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
@@ -34,7 +28,7 @@ app:
   serviceMonitor:
     enabled: false
   service:
-    port: 3000
+    port: 3001
   ingress:
     enabled: false
   versions:
