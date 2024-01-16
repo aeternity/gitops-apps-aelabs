@@ -36,14 +36,6 @@ app:
   service:
     port: 3000
   ingress:
-    enabled: true
-    annotations:
-      traefik.ingress.kubernetes.io/router.entrypoints: websecure
-      cert-manager.io/cluster-issuer: letsencrypt
-    hosts:
-      - host: "scv-gateway.dev.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "develop"
+    enabled: false
   versions:
     - {version: "develop", gitSha: "6f3707e"}
