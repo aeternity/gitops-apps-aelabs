@@ -10,7 +10,7 @@ app:
       - -c
       - >-
         npm run migration:run
-  env:    
+  env:
     "DB_PORT": "5432"
     "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
     "MQ_PORT": "5672"
@@ -46,4 +46,4 @@ app:
           - path: "/"
             version: "develop"
   versions:
-    - {version: "develop", gitSha: "6186181"} # has to be changed to valid sha
+    - {version: "develop", gitSha: "894d75f"}
