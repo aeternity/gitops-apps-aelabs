@@ -17,7 +17,7 @@ app:
     "MQ_USERNAME": "admin"
     "GATEWAY_API_URL": "http://scv-gateway-app-develop.apps.svc.superhero-dev:3000"
   image:
-    repository: "aeternity/smart-contract-verifier"
+    repository: "aeternity/smart-contract-verifier-worker"
     pullPolicy: "Always"
   probes:
     liveness:
