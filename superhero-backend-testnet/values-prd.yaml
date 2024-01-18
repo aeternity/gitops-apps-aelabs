@@ -48,6 +48,6 @@ app:
   ingress:
     enabled: true
     hosts:
-      - host: "superhero-backend.prd.service.aepps.com"
+      - host: "superhero-backend-testnet.prd.service.aepps.com"
         paths:
           - path: "/"
