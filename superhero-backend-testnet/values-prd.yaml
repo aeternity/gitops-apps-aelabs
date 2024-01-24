@@ -23,7 +23,7 @@ app:
     "ORACLE_GETTER_ADDRESS": "ct_XabcJUxaZc1w5X4WxD2WUVTLPkZX97HFYzhuwkhQXc4ZzDqDF"
     "CONTRACT_V1_GETTER_ADDRESS": "ct_2ixHY4bADzDY6ZYThGixnjYa6w5dtYoSoxtCThWvZ7SGgMGFWL"
     "CONTRACT_V3_GETTER_ADDRESS": "ct_414KdQa9is3wiq6AKV7LLk6z2UN3Sy3odmAZtenyYSv35h7fv"
-    "POSTGRES_USER": "superhero"
+    "POSTGRES_USER": "superhero_testnet"
     "POSTGRES_DB": "superhero_backend_testnet"
     "POSTGRES_HOST": "pg-superhero-backend.prd.service.aepps.com"
     "POSTGRES_SSL": "false"
