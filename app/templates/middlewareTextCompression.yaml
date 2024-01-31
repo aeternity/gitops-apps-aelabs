@@ -2,8 +2,7 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: Middleware
 metadata:
-  name: {{ include "app.fullname" . }}
+  name: {{ include "app.fullname" . }}-text-compression
 spec:
-  compress:
-    level: 9
+  compress: {}
 {{- end }}
