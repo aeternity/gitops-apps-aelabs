@@ -8,5 +8,12 @@ app:
       - host: "dex.prd.service.aepps.com"
         paths:
           - path: "/"
+      - host: "aepp.dex.superhero.com"
+        paths:
+          - path: "/"
+    tls:
+      - hosts:
+          - "aepp.dex.superhero.com"
+        secretName: aepp-dex-superhero-com-cert
   versions:
     - {version: "main", gitSha: "6895935"}
