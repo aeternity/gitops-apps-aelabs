@@ -14,13 +14,9 @@ app:
       - host: "aepp.dex.superhero.com"
         paths:
           - path: "/"
-      - host: "dex.prd.aepps.com"
-        paths:
-          - path: "/"
     tls:
       - hosts:
           - "aepp.dex.superhero.com"
-          - "dex.prd.aepps.com"
         secretName: dex-ui-cert
   versions:
     - {version: "main", gitSha: "6895935"}
