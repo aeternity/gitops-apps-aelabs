@@ -1,0 +1,8 @@
+{{- if and .Values.ingress.enabled .Values.ingress.TextCompression -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: {{ include "app.fullname" . }}-text-compression
+spec:
+  compress: {}
+{{- end }}

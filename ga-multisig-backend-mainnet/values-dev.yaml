@@ -29,6 +29,9 @@ app:
         timeoutSeconds: 60
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.middlewares: apps/ga-multisig-backend-mainnet-app-text-compression
+    TextCompression: true
     hosts:
       - host: "ga-multisig-backend-mainnet.dev.service.aepps.com"
         paths:
