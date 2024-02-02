@@ -47,6 +47,9 @@ app:
       cpu: 200m
   ingress:
     enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.middlewares: apps-superhero-backend-testnet-app-text-compression@kubernetescrd
+    TextCompression: true
     hosts:
       - host: "superhero-backend-testnet.prd.service.aepps.com"
         paths:
