@@ -30,7 +30,7 @@ app:
   ingress:
     enabled: true
     annotations:
-      traefik.ingress.kubernetes.io/router.middlewares: ga-multisig-backend-mainnet-app-text-compression@kubernetescrd
+      traefik.ingress.kubernetes.io/router.middlewares: apps/ga-multisig-backend-mainnet-app-text-compression@kubernetescrd
       kubernetes.io/ingress.class: traefik
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
     TextCompression: true
