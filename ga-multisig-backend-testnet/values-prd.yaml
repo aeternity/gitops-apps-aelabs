@@ -35,7 +35,7 @@ app:
   ingress:
     enabled: true
     annotations:
-      traefik.ingress.kubernetes.io/router.middlewares: apps-ga-multisig-backend-mainnet-app-text-compression@kubernetescrd
+      traefik.ingress.kubernetes.io/router.middlewares: apps-ga-multisig-backend-testnet-app-text-compression@kubernetescrd
     TextCompression: true
     hosts:
       - host: "ga-multisig-backend-testnet.prd.service.aepps.com"
