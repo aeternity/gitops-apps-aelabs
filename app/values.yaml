@@ -52,6 +52,7 @@ ingress:
     kubernetes.io/ingress.class: traefik
     traefik.ingress.kubernetes.io/router.entrypoints: websecure
   stripPrefix: ""
+  TextCompression: false
   hosts:
     - host: chart-example.local
       paths:
