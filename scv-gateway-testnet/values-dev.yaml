@@ -1,0 +1,54 @@
+app:
+  encValues:
+    DB_PASSWORD: ""
+    MQ_PASSWORD: ""
+    WORKER_PUB_KEY: ""
+  init:
+    enabled: true
+    command:
+      - "/bin/sh"
+    args:
+      - -c
+      - >-
+        npm run migration:run
+  env:
+    "DB_SYNCHRONIZE": "false"
+    "DB_USERNAME": "scv-gateway-testnet"
+    "DB_NAME": "scv-gateway-testnet"
+    "DB_HOST": "pg-superhero-backend.dev.service.aepps.com"
+    "DB_PORT": "5432"
+    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
+    "MQ_PORT": "5672"
+    "MQ_USERNAME": "admin"
+    "AE_MDW_URL": "https://testnet.aeternity.io/mdw" #check that
+  image:
+    repository: "aeternity/smart-contract-verifier"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  resources:
+    limits:
+      memory: 450Mi
+      cpu: 150m
+    requests:
+      memory: 300Mi
+      cpu: 100m
+  serviceMonitor:
+    enabled: false
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "scv-gateway-testnet.dev.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "develop"
+  versions:
+    - {version: "develop", gitSha: "f86c2ac"}
