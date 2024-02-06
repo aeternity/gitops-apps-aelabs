@@ -21,6 +21,7 @@ app:
     "MQ_PORT": "5672"
     "MQ_USERNAME": "admin"
     "AE_MDW_URL": "https://mainnet.aeternity.io/mdw"
+    "MQ_VERIFICATION_QUEUE": "verification_queue"
   image:
     repository: "aeternity/smart-contract-verifier"
     pullPolicy: "Always"

@@ -10,6 +10,7 @@ app:
     "MQ_PORT": "5672"
     "MQ_USERNAME": "admin"
     "GATEWAY_API_URL": "http://scv-gateway-app-develop.apps.svc.superhero-dev:3000"
+    "MQ_VERIFICATION_QUEUE": "verification_queue"
   image:
     repository: "aeternity/smart-contract-verifier-worker"
     pullPolicy: "Always"
