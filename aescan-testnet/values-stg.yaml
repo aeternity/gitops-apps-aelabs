@@ -13,12 +13,13 @@ app:
       enabled: "false"
     readiness:
       enabled: "false"
-  requests:
-    cpu: "300m"
-    memory: "450Mi"
-  limits:
-    cpu: "4500m"
-    memory: "6000Mi"
+  resources:
+    limits:
+      memory: 2000Mi
+      cpu: 750m
+    requests:
+      memory: 1000Mi
+      cpu: 500m
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
