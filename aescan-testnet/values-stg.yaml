@@ -4,17 +4,21 @@ app:
       - host: "aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-659-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-659"
   probes:
     liveness:
-      enabled: false
+      enabled: "false"
     readiness:
-      enabled: false
+      enabled: "false"
   requests:
-    cpu: 300m
-    memory: 450Mi
+    cpu: "300m"
+    memory: "450Mi"
   limits:
-    cpu: 4500m
-    memory: 6000Mi
+    cpu: "4500m"
+    memory: "6000Mi"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -28,3 +32,5 @@ app:
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
+  versions:
+    - version: "pr-659"
