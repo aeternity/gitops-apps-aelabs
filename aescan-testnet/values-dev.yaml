@@ -30,4 +30,4 @@ app:
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
   versions:
-    - {version: "develop", gitSha: "465c3da"}
+    - {version: "develop", gitSha: "9bfe7c8"}
