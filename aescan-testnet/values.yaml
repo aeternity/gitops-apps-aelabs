@@ -4,11 +4,11 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
+      memory: 700Mi
+      cpu: 700m
+    requests:
       memory: 450Mi
       cpu: 450m
-    requests:
-      memory: 300Mi
-      cpu: 300m
   ingress:
     enabled: true
     annotations:
