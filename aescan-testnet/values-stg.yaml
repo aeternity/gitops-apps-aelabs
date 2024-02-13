@@ -4,10 +4,6 @@ app:
       - host: "aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-659-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-659"
   probes:
     liveness:
       enabled: false
@@ -26,5 +22,4 @@ app:
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_NhbxN8wg8NLkGuzwRNDQhMDKSKBwDAQgxQawK7tkigi2aC7i9, ct_MLXQEP12MBn99HL6WDaiTqDbG4bJQ3Q9Bzr57oLfvEkghvpFb"
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
-  versions:
-    - version: "pr-659"
+  versions: []
