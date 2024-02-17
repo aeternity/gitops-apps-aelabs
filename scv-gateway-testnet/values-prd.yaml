@@ -15,9 +15,9 @@ app:
     "DB_SYNCHRONIZE": "false"
     "DB_USERNAME": "scv-gateway-testnet"
     "DB_NAME": "scv-gateway-testnet"
-    "DB_HOST": "pg-superhero-backend.dev.service.aepps.com"
+    "DB_HOST": "pg-superhero-backend.prd.service.aepps.com"
     "DB_PORT": "5432"
-    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
+    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-prd"
     "MQ_PORT": "5672"
     "MQ_USERNAME": "admin"
     "AE_MDW_URL": "https://testnet.aeternity.io/mdw"
@@ -48,6 +48,6 @@ app:
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
     hosts:
-      - host: "scv-gateway-testnet.dev.service.aepps.com"
+      - host: "scv-gateway-testnet.prd.service.aepps.com"
         paths:
           - path: "/"
