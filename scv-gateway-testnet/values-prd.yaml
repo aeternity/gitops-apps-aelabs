@@ -25,6 +25,7 @@ app:
   image:
     repository: "aeternity/smart-contract-verifier"
     pullPolicy: "Always"
+    tag: "develop"
   probes:
     liveness:
       enabled: false
