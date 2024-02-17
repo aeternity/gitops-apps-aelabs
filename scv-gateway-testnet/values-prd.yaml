@@ -1,0 +1,52 @@
+app:
+  encValues:
+    DB_PASSWORD: "AgBu6P7GAJ16Zq689Bg5L0o8jGKuRQIy7Y9WGhxDv7Z6+/urSN/SX7WgCsDKofX/lv2r56/Imj2xbnAtOs0jwzgmMZj58XIzT5Zmt943vaUup1uN7whg5rqjZpwqk9VdKzYCCArHR1081qTsFFLqzImQ5790YFmYRki/e336+dr9WlJ98TU2pAY1tN72P9iYRU06AHCrGkKGXVgJHVL6fvJPOYWQtuTt12X4dvnqVzfakrbND4VEzKmxef//HXKMqkKDsQDi5mbhKM8iQ0b062rf7fvbIbRPd6SWcg+LukukITq1KR8GxT+EinDKpxPaVCS0TZpeGsJZxIUJrGRDOmJgOyTELsCeH7qf21ce61fifpLaQg9xY4ZQUx5ZYU+a+kWS0nHNXB/Xq2eyZxcLiYgNOOCRWu2cYBb42cOHysqUhQuEBWId1+RCks8DcDqigW4IH7sy+MR6Wc2owm/NjzWTTrp8Hzvf+62ZXor44IiwzxwSYTUo9I6qLHA6DXEtzbHbqKuj8IFeS8Xk4pPnfCzopUHoZC4IQklMHGsAbhKbXu4S4qRS6OocZ5703DL5M4Y3LBhLFMTTfBUN0dYsO7Aii5Jv2nEq+bYfuM4MVlay6AUGL/uS5xkj53Hh1kVAeeCjmvVLh+hYVlt9NMZf1+Jz9Nf6XCFhTEs4Nn2jCdp9WJZGOtMTZx2u/ieHthuxYfkHeiGrJEWuzHzG"
+    MQ_PASSWORD: "AgA+gxyxYUjvb9yFiqu0f64VlL66sxzlF7ZULixgLd/jWa1+ekPpm2V2+jG1aDa/rC3qr7/o9dYPifPX4CaeAgxED9GYV7yzPvprAjXbBWJx0XUAwk6v/FB3O6qs3Tpp2G79Y9PQ0BTYRkSbYP3Y4AVjAzdcB4JfFCXus1oZW3LndRNEDwv7Zk4XK6SOJgd4qNm68cyhbzD7E3lXzy9i+cvcVtruIcZHGTq5p+a8VZ1obHUdNJYIWWqidyBsE47LIumD8deEkeFPwq6mOjyWarj6oWQo57Ib99dYyOkZJq/i4S0PZeO3NxCBvnqOXpepuwLr+yZYrOjD3BV557OZwUnromlhcLeu8c8+KQ8nZionDdzaAABV7ADfBkjd2q5iM6+bfztQVapWemsjPvm1pzumm6r/5hiM0dFgAUvX9iDUSYjMIWgyrloRH81HnA25qjrDqyaeI1XYBzGXR+amgbAJNQyEireuOz79zQv2I+aG3px1w6ZuhGgK59zUnANMDx30ImChrn2m3Cxr3lo9BXnfrqiuN82FhSN7Je0NI92GQgHlaVMutoX+TuiZXixv3bZferRnA2Hd87vzoHFjEYr5gQ3BkiOHXHDzHeBGnXfk3rZPFyS1/8JqJr/2TzJ5+Qyrzgn4iPor0VtuH/Q8RhYSrmAyeMjLeK4bndBZLcY4ChCpiY7Iv6z+9xo7QxhpdGsGwSOUiBClN/4/"
+    WORKER_PUB_KEY: "AgBWJU6/oFpQCguB2jqGCL/PAb72aZdhAChIq6prjHUFIBBBqJto0UH1T0T7WuW2KDhNZl4H89z7txsox/+AjpnpgmWeU2GbIJqijrBzuTQmOSsQJPnjcqhiBoc+VGTZsijDs/M+nX4QsPTu5908CFvEf9H/QiMt+hPg8RTD0q8n/e6gG2LQfKNKxKUPTB/rGtM+t80t6f40eFk6ERNF7D4odz6bdoQdh2I+kTJZeiyuAFJ2aPDGI/BdvJgSsxPJs9UUCvAX30gLgySJIYxYMDCQgpDKPxBHhlPMvvDyfflVddYaLdr4EdUG+j9BWP8ZDvY5KLFzASbTN5rRK3xznX9cyV9LI/AS6NLaLm1xjzT84nzynlKjMqzsTZVTzfgt9yZK2ebOxAjmkSd/zxer+UHujX2FTAZBUd94Oyidwwi22RGuHjrZ9dua00G9q+HXW0R1YU/jf9jOkfSHqUnL5cjXxPzLwuOJXKDV/DgjTNiEcB1JVsYWxlGSIfiSflodi3xk+M2699cmQJCRCT7KTzMBFQrUvCOFBOA+pj8M5q3Ghiot9SSwlxg1/jjD3KkIolgEAFAS/uCYOUkRz6naknRgRKWN7NXw8YghasVTo2XVg4mG/lwj6WEXrqSF4a4X8cTEoiokN4Ylsysr7l5Ocrr0/lQhE4orGklEPQS2V+mvvfIQHG0h3SNnUUWX96SGucOk2UEv1n3nroylFWao1eAF6GXWTZXbJc99STLDwTEkrseLxpSNbcyASJiq8OM7vKsiQHGLZXwhNwxKvY6xDp9JeDyu/++gRgga9KkBLrEvQDWlv4QGkpG4hUGxGwzlJoqM2MLfoWPN3i+ScC/60qXrrs7NubekXEPSPdv3nNH039LmNpqcx/mXJvQ8uPVDLskt9hE/rmcNXsY5Fm5hrxJ1DY+nP44Dv1FcxC1t1IrMrBPeFlqZlRcP8NJ3aXendqjLJbKYlABpVlrTLpAoFePvV94BJEpFHZBhe6dkxZDGlJLKELvpd8fZtywP/WusuSnbNzwtSTNqlv2yRUNAtyNi02qAT4fqE7Tj8FFMe0uCig=="
+  init:
+    enabled: true
+    command:
+      - "/bin/sh"
+    args:
+      - -c
+      - >-
+        npm run migration:run
+  env:
+    "DB_SYNCHRONIZE": "false"
+    "DB_USERNAME": "scv-gateway-testnet"
+    "DB_NAME": "scv-gateway-testnet"
+    "DB_HOST": "pg-superhero-backend.dev.service.aepps.com"
+    "DB_PORT": "5432"
+    "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-dev"
+    "MQ_PORT": "5672"
+    "MQ_USERNAME": "admin"
+    "AE_MDW_URL": "https://testnet.aeternity.io/mdw"
+    "MQ_VERIFICATION_QUEUE": "verification_queue_testnet"
+  image:
+    repository: "aeternity/smart-contract-verifier"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
+  resources:
+    limits:
+      memory: 450Mi
+      cpu: 150m
+    requests:
+      memory: 300Mi
+      cpu: 100m
+  serviceMonitor:
+    enabled: false
+  service:
+    port: 3000
+  ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
+    hosts:
+      - host: "scv-gateway-testnet.dev.service.aepps.com"
+        paths:
+          - path: "/"
