@@ -14,7 +14,7 @@ app:
   image:
     repository: "aeternity/smart-contract-verifier-worker"
     pullPolicy: "Always"
-    tag: "1.0.0-rc.1"
+    tag: "1.0.0"
   probes:
     liveness:
       enabled: false
