@@ -18,5 +18,8 @@ app:
       - hosts:
           - "aepp.dex.superhero.com"
         secretName: dex-ui-cert
+    env:
+      "VUE_APP_MAINNET_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com/"
+      "VUE_APP_TESTNET_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.service.aepps.com/"
   versions:
     - {version: "main", gitSha: "6895935"}
