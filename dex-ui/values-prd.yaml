@@ -3,8 +3,8 @@ app:
     tag: "v1.18.1"
     pullPolicy: "Always"
   env:
-      "VUE_APP_MAINNET_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com/"
-      "VUE_APP_TESTNET_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.service.aepps.com/"
+    "VUE_APP_MAINNET_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com/"
+    "VUE_APP_TESTNET_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.service.aepps.com/"
   ingress:
     enabled: "true"
     annotations:
@@ -22,4 +22,4 @@ app:
           - "aepp.dex.superhero.com"
         secretName: dex-ui-cert
   versions:
-    - {version: "main", gitSha: "6895935"}
+    - {version: "main", gitSha: "8fa5ad5"}
