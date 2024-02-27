@@ -1,10 +1,7 @@
 app:
   image:
-    tag: "v1.18.3"
+    tag: "latest"
     pullPolicy: "Always"
-  env:
-    "VUE_APP_MAINNET_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com/"
-    "VUE_APP_TESTNET_DEX_BACKEND_URL": "https://dex-backend-testnet.prd.service.aepps.com/"
   ingress:
     enabled: "true"
     annotations:
