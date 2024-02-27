@@ -8,10 +8,5 @@ app:
         paths:
           - path: "/"
             version: "pr-508"
-      - host: "pr-509-dex-ui.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-509"
   versions:
     - version: "pr-508"
-    - version: "pr-509"
