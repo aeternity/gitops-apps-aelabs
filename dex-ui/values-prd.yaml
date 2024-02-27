@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.18.1"
+    tag: "v1.18.3"
     pullPolicy: "Always"
   env:
     "VUE_APP_MAINNET_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com/"
