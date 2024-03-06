@@ -108,4 +108,4 @@ app:
       gitSha: "f137b24"
     - version: "pr-672"
       gitSha: "null"
-    - {version: "pr-666", gitSha: "8aa0b63"}
+    - {version: "pr-666", gitSha: "25a3d27"}
