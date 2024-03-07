@@ -37,14 +37,6 @@ app:
         paths:
           - path: "/"
             version: "pr-657"
-      - host: "pr-658-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-658"
-      - host: "pr-661-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-661"
       - host: "pr-663-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -61,10 +53,6 @@ app:
         paths:
           - path: "/"
             version: "pr-671"
-      - host: "pr-672-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-672"
       - host: "pr-673-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -100,10 +88,6 @@ app:
       gitSha: "4023ec9"
     - version: "pr-636"
       gitSha: "448f0ab"
-    - version: "pr-661"
-      gitSha: "efdc381"
-    - version: "pr-658"
-      gitSha: "0a1301e"
     - version: "pr-627"
       gitSha: "5329014"
     - version: "pr-657"
@@ -112,8 +96,6 @@ app:
       gitSha: "null"
     - version: "pr-663"
       gitSha: "13eaa7c"
-    - version: "pr-672"
-      gitSha: "null"
     - version: "pr-665"
       gitSha: "7cc1447"
     - version: "pr-673"
