@@ -50,8 +50,6 @@ app:
   versions:
     - version: "pr-661"
       gitSha: "adea654"
-    - version: "pr-663"
-      gitSha: "13eaa7c"
     - version: "pr-672"
       gitSha: "null"
     - version: "pr-673"
@@ -59,3 +57,4 @@ app:
     - version: "pr-675"
       gitSha: "null"
     - {version: "pr-666", gitSha: "e7e1f20"}
+    - {version: "pr-663", gitSha: "0344520"}
