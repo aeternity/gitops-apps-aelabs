@@ -3,6 +3,8 @@
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
 {{- range $key, $val := $allVersions}}
 {{- if $val.version }}
+{{- $segments := splitList "." $val.version }}
+{{- $formattedVersion := $segments | join "-" }}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -62,7 +64,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $val.version }}"
+              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
