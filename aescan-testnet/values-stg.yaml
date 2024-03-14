@@ -36,6 +36,10 @@ app:
         paths:
           - path: "/"
             version: "pr-680"
+      - host: "pr-681-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-681"
   probes:
     liveness:
       enabled: "false"
@@ -70,4 +74,6 @@ app:
       gitSha: "null"
     - version: "pr-680"
       gitSha: "null"
-    - {version: "pr-677", gitSha: "d57a0b8"}
+    - version: "pr-677"
+      gitSha: "d57a0b8"
+    - version: "pr-681"
