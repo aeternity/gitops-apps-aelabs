@@ -60,6 +60,10 @@ app:
         paths:
           - path: "/"
             version: "pr-705"
+      - host: "pr-708-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-708"
   probes:
     liveness:
       enabled: "false"
@@ -105,3 +109,4 @@ app:
     - version: "pr-701"
     - version: "pr-703"
     - version: "pr-705"
+    - version: "pr-708"
