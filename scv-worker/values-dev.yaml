@@ -33,4 +33,4 @@ app:
   ingress:
     enabled: false
   versions:
-    - {version: "develop", gitSha: "15b9908"}
+    - {version: "develop", gitSha: "27a90fa"}
