@@ -68,6 +68,10 @@ app:
         paths:
           - path: "/"
             version: "pr-718"
+      - host: "pr-719-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-719"
   probes:
     liveness:
       enabled: "false"
@@ -117,3 +121,4 @@ app:
     - version: "pr-711"
     - version: "pr-717"
     - version: "pr-718"
+    - version: "pr-719"
