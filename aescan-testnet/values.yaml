@@ -9,6 +9,11 @@ app:
     requests:
       memory: 1200Mi
       cpu: 500m
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
     enabled: true
     annotations:
