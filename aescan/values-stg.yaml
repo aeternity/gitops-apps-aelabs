@@ -1,9 +1,4 @@
 app:
-  probes:
-    liveness:
-      enabled: "false"
-    readiness:
-      enabled: "false"
   ingress:
     hosts:
       - host: "aescan.stg.service.aepps.com"
