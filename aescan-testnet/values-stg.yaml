@@ -123,4 +123,4 @@ app:
       gitSha: "3baff73"
     - {version: "pr-735", gitSha: "98ca3d6"}
     - {version: "pr-729", gitSha: "48dfaf7"}
-    - {version: "pr-721", gitSha: "b292f7e"}
+    - {version: "pr-721", gitSha: "64855d2"}
