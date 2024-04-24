@@ -8,14 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-603"
-      - host: "pr-634-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-634"
-      - host: "pr-636-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-636"
       - host: "pr-637-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -24,10 +16,6 @@ app:
         paths:
           - path: "/"
             version: "pr-657"
-      - host: "pr-671-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-671"
       - host: "pr-677-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -36,30 +24,10 @@ app:
         paths:
           - path: "/"
             version: "pr-678"
-      - host: "pr-679-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-679"
-      - host: "pr-680-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-680"
-      - host: "pr-680-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-680"
       - host: "pr-681-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-681"
-      - host: "pr-700-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-700"
-      - host: "pr-707-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-707"
       - host: "pr-717-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -88,10 +56,6 @@ app:
         paths:
           - path: "/"
             version: "pr-729"
-      - host: "pr-735-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-735"
       - host: "pr-737-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -123,44 +87,24 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_mainnet"
   versions:
-    - version: "pr-634"
-      gitSha: "f52a04c"
     - version: "pr-603"
       gitSha: "4023ec9"
-    - version: "pr-636"
-      gitSha: "448f0ab"
-    - version: "pr-627"
-      gitSha: "5329014"
-    - version: "pr-671"
-      gitSha: "null"
     - version: "pr-657"
       gitSha: "22d94d8"
-    - version: "pr-679"
-      gitSha: "null"
     - version: "pr-678"
       gitSha: "67c8bca"
-    - version: "pr-680"
-      gitSha: "f43ad90"
     - version: "pr-677"
       gitSha: "8cb96e6"
     - version: "pr-681"
       gitSha: "7e2308e"
-    - version: "pr-700"
-      gitSha: "e98d4a3"
     - version: "pr-637"
       gitSha: "ea54a8a"
-    - version: "pr-707"
-      gitSha: "null"
     - version: "pr-717"
       gitSha: "null"
     - version: "pr-717"
       gitSha: "null"
-    - version: "pr-684"
-      gitSha: "f6ff2af"
     - version: "pr-720"
       gitSha: "22527a8"
-    - version: "pr-735"
-      gitSha: "98ca3d6"
     - version: "pr-729"
       gitSha: "48dfaf7"
     - version: "pr-721"
