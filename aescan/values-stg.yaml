@@ -60,10 +60,6 @@ app:
         paths:
           - path: "/"
             version: "pr-739"
-      - host: "pr-740-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-740"
       - host: "pr-745-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -107,8 +103,6 @@ app:
       gitSha: "64855d2"
     - version: "pr-719"
       gitSha: "a116feb"
-    - version: "pr-740"
-      gitSha: "null"
     - version: "pr-739"
       gitSha: "64b0c2f"
     - version: "pr-724"
