@@ -1,6 +1,6 @@
 app:
   image:
-    tag: "v1.18.4"
+    tag: "v1.18.5"
     pullPolicy: "Always"
   ingress:
     enabled: "true"
