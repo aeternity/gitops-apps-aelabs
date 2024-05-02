@@ -111,4 +111,4 @@ app:
       gitSha: "54df231"
     - {version: "pr-748", gitSha: "ddd7883"}
     - {version: "pr-719", gitSha: "e2c2b83"}
-    - {version: "pr-739", gitSha: "02bec87"}
+    - {version: "pr-739", gitSha: "2d8c364"}
