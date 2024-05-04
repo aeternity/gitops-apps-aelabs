@@ -39,10 +39,6 @@ app:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-17-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-17"
     tls:
       - hosts: "pr-17-ga-multisig-backend-testnet.stg.aepps.com"
   env:
@@ -52,5 +48,4 @@ app:
     "PG_HOST": "pg-superhero-backend.stg.service.aepps.com"
     "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
     "NODE_URL": "https://testnet.aeternity.io"
-  versions:
-    - version: "pr-17"
+  versions: []
