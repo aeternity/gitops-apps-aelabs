@@ -27,7 +27,7 @@ app:
     "POSTGRES_SSL": "false"
   image:
     repository: aeternity/superhero-backend
-    tag: "v3.1.6"
+    tag: "v3.1.7"
     pullPolicy: "Always"
   probes:
     liveness:
