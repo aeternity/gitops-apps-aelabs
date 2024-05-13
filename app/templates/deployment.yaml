@@ -63,7 +63,6 @@ spec:
           {{- range $key, $value := $.Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
-            {{- end }}
           {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
@@ -93,8 +92,7 @@ spec:
           env:
           {{- range $key, $value := $.Values.env }}
             - name: {{ $key }}
-              value: {{ $value | quote }}  
-            {{- end }}
+              value: {{ $value | quote }}
           {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
