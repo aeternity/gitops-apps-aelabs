@@ -4,7 +4,6 @@
 {{- range $key, $val := $allVersions}}
 {{- if $val.version }}
 {{- $segments := splitList "." $val.version }}
-{{- $formattedVersion := $segments | join "-" }}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -64,7 +63,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ include "app.fullname" $ }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -99,7 +98,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ include "app.fullname" $ }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
