@@ -61,10 +61,6 @@ spec:
           {{- end }}
           env:
           {{- range $key, $value := $.Values.env }}
-            {{- if eq $key "POSTGRES_SCHEMA"}}
-            - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}"
-            {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
             {{- end }}
@@ -96,10 +92,6 @@ spec:
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
           {{- range $key, $value := $.Values.env }}
-            {{- if eq $key "POSTGRES_SCHEMA"}}
-            - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}"
-            {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
             {{- end }}
