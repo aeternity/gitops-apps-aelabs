@@ -117,6 +117,5 @@ app:
       gitSha: "null"
     - version: "pr-717"
       gitSha: "fb143c3"
-    - version: "pr-739"
-      gitSha: "215ee31"
     - {version: "pr-783", gitSha: "3f78730"}
+    - {version: "pr-739", gitSha: "05673f0"}
