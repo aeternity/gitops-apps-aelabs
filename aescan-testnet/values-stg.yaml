@@ -64,10 +64,6 @@ app:
         paths:
           - path: "/"
             version: "pr-772"
-      - host: "pr-780-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-780"
       - host: "pr-782-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -131,5 +127,4 @@ app:
       gitSha: "null"
     - version: "pr-785"
       gitSha: "null"
-    - {version: "pr-780", gitSha: "a740ee5"}
     - {version: "pr-761", gitSha: "1110c79"}
