@@ -27,7 +27,7 @@ app:
     args:
       - -c
       - >-
-        rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB?schema=$POSTGRES_SCHEMA && npx prisma db push --accept-data-loss
+        rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB?schema=$POSTGRES_SCHEMA
   env:
     "POSTGRES_DB": "dex-backend-app"
     "POSTGRES_SCHEMA": "dex-backend-mainnet-app"
