@@ -48,10 +48,6 @@ app:
         paths:
           - path: "/"
             version: "pr-796"
-      - host: "pr-799-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-799"
       - host: "pr-801-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -154,4 +150,3 @@ app:
     - version: "pr-816"
       gitSha: "null"
     - {version: "pr-717", gitSha: "bd4ab0c"}
-    - {version: "pr-799", gitSha: "5dee342"}
