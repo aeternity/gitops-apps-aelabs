@@ -2,6 +2,7 @@ app:
   image:
     repository: "aeternity/aescan"
     pullPolicy: "Always"
+    tag: "0.0.1"
   resources:
     limits:
       memory: 2000Mi
