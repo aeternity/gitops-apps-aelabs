@@ -4,18 +4,6 @@ app:
       - host: "aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-661-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-661"
-      - host: "pr-672-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-672"
-      - host: "pr-675-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-675"
       - host: "pr-678-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -24,42 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-681"
-      - host: "pr-701-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-701"
-      - host: "pr-721-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-721"
-      - host: "pr-724-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-724"
-      - host: "pr-731-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-731"
-      - host: "pr-741-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-741"
-      - host: "pr-760-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-760"
-      - host: "pr-784-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-784"
-      - host: "pr-791-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-791"
-      - host: "pr-805-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-805"
       - host: "pr-810-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -72,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-812"
-      - host: "pr-816-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-816"
       - host: "pr-819-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -111,35 +59,7 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
   versions:
-    - version: "pr-661"
-      gitSha: "adea654"
-    - version: "pr-672"
-      gitSha: "null"
-    - version: "pr-675"
-      gitSha: "null"
-    - version: "pr-701"
-      gitSha: "null"
-    - version: "pr-731"
-      gitSha: "null"
-    - version: "pr-741"
-      gitSha: "null"
-    - version: "pr-724"
-      gitSha: "54df231"
-    - version: "pr-719"
-      gitSha: "3ec68c7"
-    - version: "pr-760"
-      gitSha: "null"
-    - version: "pr-721"
-      gitSha: "b1848c4"
-    - version: "pr-791"
-      gitSha: "2954855"
-    - version: "pr-784"
-      gitSha: "16bccd5"
-    - version: "pr-805"
-      gitSha: "null"
     - version: "pr-810"
-      gitSha: "null"
-    - version: "pr-816"
       gitSha: "null"
     - version: "pr-819"
       gitSha: "null"
@@ -147,8 +67,6 @@ app:
       gitSha: "null"
     - version: "pr-809"
       gitSha: "cad9c56"
-    - version: "pr-785"
-      gitSha: "e4ff79a"
     - version: "pr-831"
       gitSha: "6f21028"
     - version: "pr-812"
