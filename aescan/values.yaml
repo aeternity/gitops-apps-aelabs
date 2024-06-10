@@ -3,13 +3,13 @@ app:
     tag: "0.0.1"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
-  #resources:
-    #limits:
-      #memory: 000Mi
-      #cpu: 1000m
-    #requests:
-      #memory: 1500Mi
-      #cpu: 500m
+  resources:
+    limits:
+      memory: 2000Mi
+      cpu: 1000m
+    requests:
+      memory: 1000Mi
+      cpu: 500m
   probes:
     liveness:
       enabled: false
