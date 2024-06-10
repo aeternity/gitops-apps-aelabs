@@ -8,7 +8,7 @@ app:
       memory: 2000Mi
       cpu: 1000m
     requests:
-      memory: 1000Mi
+      memory: 800Mi
       cpu: 500m
   probes:
     liveness:
