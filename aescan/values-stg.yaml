@@ -92,6 +92,6 @@ app:
     - version: "pr-831"
       gitSha: "d96c811"
     - {version: "pr-835", gitSha: "79ef548"}
-    - {version: "pr-840", gitSha: "f28ee66"}
     - {version: "pr-841", gitSha: "637f77e"}
     - {version: "pr-809", gitSha: "8aaa488"}
+    - {version: "pr-840", gitSha: "81b33ad"}
