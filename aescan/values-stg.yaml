@@ -112,5 +112,7 @@ app:
     - version: "pr-840"
       gitSha: "81b33ad"
     - version: "pr-843"
+      gitSha: "null"
     - version: "pr-846"
-    - version: "pr-847"
+      gitSha: "null"
+    - {version: "pr-847", gitSha: "487b5bd"}
