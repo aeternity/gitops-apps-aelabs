@@ -22,6 +22,13 @@ app:
       - host: "dex-backend-testnet.prd.service.aepps.com"
         paths:
           - path: "/"
+  init:
+    enabled: "true"
+    command: ["/bin/sh"]
+    args:
+      - -c
+      - >-
+        rm -rf .env && export DATABASE_URL=postgresql://$POSTGRES_USERNAME:$POSTGRES_PASSWORD@$POSTGRES_HOST:$POSTGRES_PORT/$POSTGRES_DB?schema=$POSTGRES_SCHEMA && npx prisma migrate deploy
   env:
     "POSTGRES_DB": "dex-backend-app"
     "POSTGRES_SCHEMA": "dex-backend-testnet-app"
