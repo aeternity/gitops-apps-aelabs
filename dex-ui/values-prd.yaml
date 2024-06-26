@@ -19,4 +19,4 @@ app:
           - "aepp.dex.superhero.com"
         secretName: dex-ui-cert
   versions:
-    - {version: "main", gitSha: "05e74e9"}
+    - {version: "main", gitSha: "9d5c7a9"}
