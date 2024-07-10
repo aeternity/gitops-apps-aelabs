@@ -18,8 +18,10 @@ app:
             version: "pr-270"
   versions:
     - version: "pr-265"
+      gitSha: "null"
     - version: "pr-269"
-    - version: "pr-270"
+      gitSha: "null"
+    - {version: "pr-270", gitSha: "df02701"}
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
