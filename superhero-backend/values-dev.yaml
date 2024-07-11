@@ -49,9 +49,17 @@ app:
       - host: "superhero-backend.dev.service.aepps.com"
         paths:
           - path: "/"
+  
   persistence:
     enabled: true
-    storageClass: "hcloud-volume"
-    accessMode: "ReadWriteOnce"
-    size: "100Gi"
-    mountPath: "/opt"
+    disks:
+      - name: disk1
+        storageClass: "hcloud-volume"
+        accessMode: "ReadWriteOnce"
+        size: "50Gi"
+        mountPath: "/app/traces"
+      - name: disk2
+        storageClass: "hcloud-volume"
+        accessMode: "ReadWriteOnce"
+        size: "50Gi"
+        mountPath: "/app/images"
