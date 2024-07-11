@@ -51,3 +51,6 @@ app:
           - path: "/"
   persistence:
     enabled: true
+    storageClass: "hcloud-volumes"
+    accessMode: "ReadWriteOnce"
+    size: "100Gi"
