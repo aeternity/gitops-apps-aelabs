@@ -16,9 +16,15 @@ app:
         paths:
           - path: "/"
             version: "pr-270"
+      - host: "pr-271-state-channel-demo-frontend.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-271"
   versions:
     - version: "pr-263"
       gitSha: "null"
     - version: "pr-269"
       gitSha: "null"
-    - {version: "pr-270", gitSha: "df02701"}
+    - version: "pr-270"
+      gitSha: "df02701"
+    - version: "pr-271"
