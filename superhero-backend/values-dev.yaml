@@ -49,3 +49,5 @@ app:
       - host: "superhero-backend.dev.service.aepps.com"
         paths:
           - path: "/"
+  persistence:
+    enabled: true
