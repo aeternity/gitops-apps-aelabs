@@ -54,4 +54,4 @@ app:
     storageClass: "hcloud-volume"
     accessMode: "ReadWriteOnce"
     size: "100Gi"
-    mountPath: "/app"
+    mountPath: "/opt"
