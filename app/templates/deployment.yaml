@@ -139,7 +139,7 @@ spec:
             {{- toYaml $.Values.resources | nindent 12 }}
           volumeMounts:
           {{- range $disk := $.Values.persistence.disks }}
-          - name: {{ include "app.fullname" $ | cat $disk.name }}
+          - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
             mountPath: {{ $disk.mountPath | default "/opt" }}
           {{- end }}
       volumes:
