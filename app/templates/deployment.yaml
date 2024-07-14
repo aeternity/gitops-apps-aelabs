@@ -1,7 +1,7 @@
 {{ $versions := .Values.versions }}
 {{ $imageTag := .Values.image.tag }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
-{{- range $key, $val := $allVersions}}
+{{- range $key, $val := $allVersions }}
 {{- if $val.version }}
 {{- $segments := splitList "." $val.version }}
 {{- $formattedVersion := $segments | join "-" }}
@@ -138,16 +138,16 @@ spec:
           resources:
             {{- toYaml $.Values.resources | nindent 12 }}
           volumeMounts:
-          - name: data
-            mountPath: {{ $.Values.persistence.mountPath | default "/opt" }}
+          {{- range $disk := $.Values.persistence.disks }}
+          - name: {{ $disk.name }}
+            mountPath: {{ $disk.mountPath | default "/opt" }}
+          {{- end }}
       volumes:
-      - name: data
-      {{- if $.Values.persistence.enabled }}
+      {{- range $disk := $.Values.persistence.disks }}
+      - name: {{ $disk.name }}
         persistentVolumeClaim:
-          claimName: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
-      {{- else }}
-        emptyDir: {}
-      {{- end -}}
+          claimName: {{ include "app.versionedFullname" (merge (dict "version" $val.version "disk" $disk.name) $) }}
+      {{- end }}
       {{- with $.Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
