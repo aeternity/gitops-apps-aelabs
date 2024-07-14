@@ -146,7 +146,7 @@ spec:
       {{- range $disk := $.Values.persistence.disks }}
       - name: {{ $disk.name }}
         persistentVolumeClaim:
-          claimName: {{ include "app.versionedFullname" (merge (dict "version" $val.version "disk" $disk.name) $) }}
+          claimName: {{ $disk.name }}
       {{- end }}
       {{- with $.Values.nodeSelector }}
       nodeSelector:
