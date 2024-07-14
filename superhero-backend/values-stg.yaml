@@ -62,3 +62,7 @@ app:
         accessMode: "ReadWriteOnce"
         size: "50Gi"
         mountPath: "/app/images"
+  podSecurityContext:
+    fsGroup: 65533
+    runAsUser: 1001
+    runAsGroup: 65533
