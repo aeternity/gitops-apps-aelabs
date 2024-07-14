@@ -49,3 +49,16 @@ app:
       - host: "superhero-backend.stg.service.aepps.com"
         paths:
           - path: "/"
+  persistence:
+    enabled: true
+    disks:
+      - name: disk1
+        storageClass: "hcloud-volumes"
+        accessMode: "ReadWriteOnce"
+        size: "50Gi"
+        mountPath: "/app/traces"
+      - name: disk2
+        storageClass: "hcloud-volumes"
+        accessMode: "ReadWriteOnce"
+        size: "50Gi"
+        mountPath: "/app/images"
