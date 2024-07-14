@@ -1,9 +1,10 @@
 {{ $versions := .Values.versions }}
 {{ $imageTag := .Values.image.tag }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
-{{- range $key, $val := $allVersions}}
+{{- range $key, $val := $allVersions }}
 {{- if $val.version }}
 {{- $segments := splitList "." $val.version }}
+{{- $formattedVersion := $segments | join "-" }}
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -61,8 +62,13 @@ spec:
           {{- end }}
           env:
           {{- range $key, $value := $.Values.env }}
+            {{- if eq $key "POSTGRES_SCHEMA"}}
+            - name: {{ $key }}
+              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+            {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
+            {{- end }}
           {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
@@ -91,8 +97,13 @@ spec:
           imagePullPolicy: {{ $.Values.image.pullPolicy }}
           env:
           {{- range $key, $value := $.Values.env }}
+            {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: {{ $value | quote }}
+              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+            {{- else }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}  
+            {{- end }}
           {{- end }}
             {{- range $key, $value := $.Values.encValues }}
             - name: {{ $key }}
@@ -127,16 +138,16 @@ spec:
           resources:
             {{- toYaml $.Values.resources | nindent 12 }}
           volumeMounts:
-          - name: data
-            mountPath: {{ $.Values.persistence.mountPath | default "/opt" }}
+          {{- range $disk := $.Values.persistence.disks }}
+          - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+            mountPath: {{ $disk.mountPath | default "/opt" }}
+          {{- end }}
       volumes:
-      - name: data
-      {{- if $.Values.persistence.enabled }}
+      {{- range $disk := $.Values.persistence.disks }}
+      - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
         persistentVolumeClaim:
-          claimName: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
-      {{- else }}
-        emptyDir: {}
-      {{- end -}}
+          claimName:  {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+      {{- end }}
       {{- with $.Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
