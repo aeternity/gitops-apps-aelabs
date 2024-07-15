@@ -36,10 +36,6 @@ app:
         paths:
           - path: "/"
             version: "pr-834"
-      - host: "pr-835-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-835"
       - host: "pr-840-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -87,5 +83,4 @@ app:
       gitSha: "81b33ad"
     - version: "pr-851"
       gitSha: "null"
-    - {version: "pr-835", gitSha: "0fe1022"}
     - {version: "pr-850", gitSha: "f535cc7"}
