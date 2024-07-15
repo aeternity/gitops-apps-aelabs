@@ -48,10 +48,6 @@ app:
         paths:
           - path: "/"
             version: "pr-841"
-      - host: "pr-847-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-847"
       - host: "pr-850-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -93,6 +89,4 @@ app:
       gitSha: "8aaa488"
     - version: "pr-840"
       gitSha: "81b33ad"
-    - version: "pr-847"
-      gitSha: "487b5bd"
     - version: "pr-850"
