@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-812"
-      - host: "pr-819-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-819"
       - host: "pr-825-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -64,8 +60,6 @@ app:
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
   versions:
     - version: "pr-810"
-      gitSha: "null"
-    - version: "pr-819"
       gitSha: "null"
     - version: "pr-825"
       gitSha: "null"
