@@ -47,8 +47,6 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
   versions:
-    - version: "pr-810"
-      gitSha: "null"
     - version: "pr-812"
       gitSha: "7b6cba6"
     - version: "pr-681"
@@ -59,3 +57,4 @@ app:
       gitSha: "81b33ad"
     - {version: "pr-809", gitSha: "3d7f41f"}
     - {version: "pr-834", gitSha: "547bd72"}
+    - {version: "pr-810", gitSha: "4af47df"}
