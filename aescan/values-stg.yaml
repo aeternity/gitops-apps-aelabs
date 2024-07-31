@@ -28,10 +28,6 @@ app:
         paths:
           - path: "/"
             version: "pr-866"
-      - host: "pr-868-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-868"
       - host: "pr-869-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -66,4 +62,3 @@ app:
     - version: "pr-866"
       gitSha: "null"
     - {version: "pr-869", gitSha: "57bea40"}
-    - {version: "pr-868", gitSha: "3de1c73"}
