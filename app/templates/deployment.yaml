@@ -64,7 +64,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -99,7 +99,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
