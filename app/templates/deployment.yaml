@@ -137,17 +137,24 @@ spec:
           {{- end }}
           resources:
             {{- toYaml $.Values.resources | nindent 12 }}
+
+          {{- if $.Values.persistence.enabled }}
           volumeMounts:
           {{- range $disk := $.Values.persistence.disks }}
           - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
             mountPath: {{ $disk.mountPath | default "/opt" }}
           {{- end }}
+          {{- end }}
+
+      {{- if $.Values.persistence.enabled }}
       volumes:
-      {{- range $disk := $.Values.persistence.disks }}
-      - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
-        persistentVolumeClaim:
-          claimName:  {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+        {{- range $disk := $.Values.persistence.disks }}
+        - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+          persistentVolumeClaim:
+            claimName: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+        {{- end }}
       {{- end }}
+        
       {{- with $.Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
