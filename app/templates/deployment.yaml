@@ -151,7 +151,7 @@ spec:
         {{- range $disk := $.Values.persistence.disks }}
         - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
           persistentVolumeClaim:
-            claimName: {{ $disk.claimName }}
+            claimName: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
         {{- end }}
       {{- end }}
         
