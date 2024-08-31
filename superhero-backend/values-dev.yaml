@@ -51,7 +51,7 @@ app:
           - path: "/"
   
   persistence:
-    enabled: false
+    enabled: true
     disks:
       - name: disk1
         storageClass: "hcloud-volume"
