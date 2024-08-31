@@ -64,7 +64,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -99,7 +99,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -137,17 +137,24 @@ spec:
           {{- end }}
           resources:
             {{- toYaml $.Values.resources | nindent 12 }}
+
+          {{- if $.Values.persistence.enabled }}
           volumeMounts:
           {{- range $disk := $.Values.persistence.disks }}
           - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
             mountPath: {{ $disk.mountPath | default "/opt" }}
           {{- end }}
+          {{- end }}
+
+      {{- if $.Values.persistence.enabled }}
       volumes:
-      {{- range $disk := $.Values.persistence.disks }}
-      - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
-        persistentVolumeClaim:
-          claimName:  {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+        {{- range $disk := $.Values.persistence.disks }}
+        - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+          persistentVolumeClaim:
+            claimName: {{ $disk.claimName }}
+        {{- end }}
       {{- end }}
+        
       {{- with $.Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
