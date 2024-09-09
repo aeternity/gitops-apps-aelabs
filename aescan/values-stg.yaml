@@ -4,10 +4,6 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-869-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-869"
       - host: "pr-875-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -87,8 +83,6 @@ app:
       gitSha: "45004d4"
     - version: "pr-876"
       gitSha: "8f4a113"
-    - version: "pr-869"
-      gitSha: "ba2a089"
     - version: "pr-913"
       gitSha: "null"
     - version: "pr-915"
