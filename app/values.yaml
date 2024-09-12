@@ -124,3 +124,5 @@ serviceMonitor:
   metricsPort: http
   path: /metrics
   scheme: ""
+
+deploymentType: "deployment"

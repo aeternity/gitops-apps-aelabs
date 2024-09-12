@@ -1,4 +1,5 @@
-{{- if eq .Values.deploymentType "deployment" }}
+{{- if eq .Values.deploymentType "statefulset" }}
+# StatefulSet template
 {{ $versions := .Values.versions }}
 {{ $imageTag := .Values.image.tag }}
 {{ $allVersions := append $versions (merge (dict "version" (default .Values.image.tag .Chart.AppVersion )) $) | compact | uniq }}
@@ -8,7 +9,7 @@
 {{- $formattedVersion := $segments | join "-" }}
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "app.versionedFullname" (merge (dict "version" $val.version) $) }}
   labels:
@@ -65,7 +66,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -100,7 +101,7 @@ spec:
           {{- range $key, $value := $.Values.env }}
             {{- if eq $key "POSTGRES_SCHEMA"}}
             - name: {{ $key }}
-              value: "{{ include "app.fullname" $ }}-{{ $formattedVersion }}"
+              value: "{{ $.Values.env.POSTGRES_SCHEMA | default (print (include "app.fullname" $) "-" $formattedVersion) }}"
             {{- else }}
             - name: {{ $key }}
               value: {{ $value | quote }}  
@@ -138,16 +139,20 @@ spec:
           {{- end }}
           resources:
             {{- toYaml $.Values.resources | nindent 12 }}
+          {{- if $.Values.persistence.enabled }}
           volumeMounts:
           {{- range $disk := $.Values.persistence.disks }}
           - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
             mountPath: {{ $disk.mountPath | default "/opt" }}
           {{- end }}
+          {{- end }}
+      {{- if $.Values.persistence.enabled }}
       volumes:
-      {{- range $disk := $.Values.persistence.disks }}
-      - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
-        persistentVolumeClaim:
-          claimName:  {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+        {{- range $disk := $.Values.persistence.disks }}
+        - name: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+          persistentVolumeClaim:
+            claimName: {{ printf "%s-%s" (include "app.fullname" $) $disk.name }}
+        {{- end }}
       {{- end }}
       {{- with $.Values.nodeSelector }}
       nodeSelector:
@@ -164,4 +169,3 @@ spec:
 {{- end }}
 {{- end }}
 {{- end }}
-
