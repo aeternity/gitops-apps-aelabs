@@ -76,6 +76,10 @@ app:
         paths:
           - path: "/"
             version: "pr-927"
+      - host: "pr-928-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-928"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -122,3 +126,4 @@ app:
     - version: "pr-923"
     - version: "pr-926"
     - version: "pr-927"
+    - version: "pr-928"
