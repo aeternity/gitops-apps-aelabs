@@ -8,62 +8,22 @@ app:
         paths:
           - path: "/"
             version: "pr-876"
-      - host: "pr-906-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-906"
-      - host: "pr-913-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-913"
       - host: "pr-915-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-915"
-      - host: "pr-916-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-916"
       - host: "pr-917-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-917"
-      - host: "pr-918-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-918"
       - host: "pr-919-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-919"
-      - host: "pr-923-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-923"
-      - host: "pr-926-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-926"
-      - host: "pr-927-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-927"
-      - host: "pr-928-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-928"
       - host: "pr-930-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-930"
-      - host: "pr-932-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-932"
-      - host: "pr-933-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-933"
       - host: "pr-934-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -87,33 +47,13 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
   versions:
-    - version: "pr-906"
-      gitSha: "null"
     - version: "pr-876"
       gitSha: "8f4a113"
-    - version: "pr-918"
-      gitSha: "d376407"
-    - version: "pr-923"
-      gitSha: "null"
-    - version: "pr-926"
-      gitSha: "null"
-    - version: "pr-927"
-      gitSha: "null"
-    - version: "pr-928"
-      gitSha: "3f25e26"
-    - version: "pr-913"
-      gitSha: "2345bbc"
-    - version: "pr-916"
-      gitSha: "5f99119"
     - version: "pr-919"
       gitSha: "039e63e"
     - version: "pr-917"
       gitSha: "596d5c8"
     - version: "pr-930"
-      gitSha: "null"
-    - version: "pr-932"
-      gitSha: "null"
-    - version: "pr-933"
       gitSha: "null"
     - version: "pr-915"
       gitSha: "07e8ef6"
