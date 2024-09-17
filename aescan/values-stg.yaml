@@ -8,14 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-876"
-      - host: "pr-906-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-906"
-      - host: "pr-913-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-913"
       - host: "pr-915-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -24,34 +16,14 @@ app:
         paths:
           - path: "/"
             version: "pr-917"
-      - host: "pr-918-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-918"
       - host: "pr-919-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-919"
-      - host: "pr-923-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-923"
-      - host: "pr-926-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-926"
-      - host: "pr-927-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-927"
       - host: "pr-930-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-930"
-      - host: "pr-931-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-931"
       - host: "pr-934-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -75,29 +47,15 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_mainnet"
   versions:
-    - version: "pr-906"
-      gitSha: "null"
     - version: "pr-876"
       gitSha: "8f4a113"
     - version: "pr-915"
       gitSha: "07e8ef6"
-    - version: "pr-918"
-      gitSha: "d376407"
-    - version: "pr-923"
-      gitSha: "null"
-    - version: "pr-926"
-      gitSha: "null"
-    - version: "pr-927"
-      gitSha: "null"
-    - version: "pr-913"
-      gitSha: "2345bbc"
     - version: "pr-919"
       gitSha: "039e63e"
     - version: "pr-917"
       gitSha: "596d5c8"
     - version: "pr-930"
-      gitSha: "null"
-    - version: "pr-931"
       gitSha: "null"
     - version: "pr-934"
       gitSha: "2cc21bf"
