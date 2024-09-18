@@ -11,5 +11,10 @@ app:
         paths:
           - path: "/"
             version: "pr-167"
+      - host: "pr-169-test-repo.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-169"
   versions:
     - version: "pr-167"
+    - version: "pr-169"
