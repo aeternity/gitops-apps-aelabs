@@ -13,5 +13,10 @@ app:
         paths:
           - path: "/"
             version: "pr-10"
+      - host: "pr-12-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-12"
   versions:
     - version: "pr-10"
+    - version: "pr-12"
