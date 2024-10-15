@@ -1,6 +1,5 @@
 app:
   image:
-    tag: "latest"
     repository: "aeternitybot/state-channel-demo-frontend"
     pullPolicy: "Always"
   probes:
@@ -17,9 +16,11 @@ app:
       - host: "state-channel-demo.prd.service.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
       - host: "statechannel.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
     tls:
       - hosts:
           - "statechannel.aepps.com"
