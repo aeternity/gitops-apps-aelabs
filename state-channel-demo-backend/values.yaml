@@ -8,7 +8,7 @@ app:
   ingress:
     enabled: true
     annotations:
-      traefik.ingress.kubernetes.io/router.middlewares: cors-headers@kubernetescrd
+      #traefik.ingress.kubernetes.io/router.middlewares: cors-headers@kubernetescrd
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
   probes:
