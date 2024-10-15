@@ -38,3 +38,5 @@ app:
       - host: "state-channel-demo-backend.prd.service.aepps.com"
         paths:
           - path: "/"
+  versions:
+    - {version: "latest", gitSha: "d9f0052"}
