@@ -17,14 +17,10 @@ app:
       - host: "state-channel-demo.prd.service.aepps.com"
         paths:
           - path: "/"
-        version: "latest"
       - host: "statechannel.aepps.com"
         paths:
           - path: "/"
-        version: "latest"
     tls:
       - hosts:
           - "statechannel.aepps.com"
         secretName: state-channel-demo-frontend-cert
-  versions:
-    - {version: "latest", gitSha: "0cd6477"}
