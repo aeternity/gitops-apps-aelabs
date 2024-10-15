@@ -1,5 +1,18 @@
 app:
+  image:
+    tag: "latest"
+    repository: "aeternitybot/state-channel-demo-frontend"
+    pullPolicy: "Always"
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
   ingress:
+    enabled: true
+    annotations:
+      traefik.ingress.kubernetes.io/router.entrypoints: websecure
+      cert-manager.io/cluster-issuer: letsencrypt
     hosts:
       - host: "state-channel-demo.prd.service.aepps.com"
         paths:
