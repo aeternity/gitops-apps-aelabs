@@ -7,8 +7,7 @@ app:
     port: 3000
   ingress:
     enabled: true
-    annotations:
-      #traefik.ingress.kubernetes.io/router.middlewares: cors-headers@kubernetescrd
+    annotations:      
       traefik.ingress.kubernetes.io/router.entrypoints: websecure
       cert-manager.io/cluster-issuer: letsencrypt
     hosts:
@@ -38,5 +37,3 @@ app:
       - host: "state-channel-demo-backend.prd.service.aepps.com"
         paths:
           - path: "/"
-  versions:
-    - {version: "latest", gitSha: "d9f0052"}
