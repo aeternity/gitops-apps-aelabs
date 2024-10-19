@@ -42,10 +42,6 @@ app:
         paths:
           - path: "/"
             version: "pr-20"
-      - host: "pr-21-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-21"
     tls:
       - hosts: "pr-20-ga-multisig-backend-testnet.stg.aepps.compr-21-ga-multisig-backend-testnet.stg.aepps.com"
   env:
@@ -57,4 +53,3 @@ app:
     "NODE_URL": "https://testnet.aeternity.io"
   versions:
     - version: "pr-20"
-    - version: "pr-21"
