@@ -39,10 +39,10 @@ app:
         paths:
           - path: "/"
   env:
-    "PG_DB": "ga-multisig-backend-mainnet"
-    "PG_PORT": "5432"
-    "PG_USER": "ga-multisig-backend"
-    "PG_HOST": "pg-superhero-backend.stg.service.aepps.com"
-    "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
-    "NODE_URL": "https://mainnet.aeternity.io"
+    PG_DB: "ga-multisig-backend-mainnet"
+    PG_PORT: "5432"
+    PG_USER: "ga-multisig-backend"
+    PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
+    MIDDLEWARE_URL: "https://mainnet.aeternity.io/mdw"
+    NODE_URL: "https://mainnet.aeternity.io"
   versions: []
