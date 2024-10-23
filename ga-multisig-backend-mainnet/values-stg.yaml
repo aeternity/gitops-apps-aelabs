@@ -38,10 +38,6 @@ app:
       - host: "ga-multisig-backend-mainnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-20-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-20"
     tls:
       - hosts: "pr-20-ga-multisig-backend-mainnet.stg.aepps.compr-21-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
@@ -51,5 +47,4 @@ app:
     "PG_HOST": "pg-superhero-backend.stg.service.aepps.com"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
     "NODE_URL": "https://mainnet.aeternity.io"
-  versions:
-    - version: "pr-20"
+  versions: []
