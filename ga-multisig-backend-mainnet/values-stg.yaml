@@ -38,8 +38,6 @@ app:
       - host: "ga-multisig-backend-mainnet.stg.service.aepps.com"
         paths:
           - path: "/"
-    tls:
-      - hosts: "pr-20-ga-multisig-backend-mainnet.stg.aepps.compr-21-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     "PG_DB": "ga-multisig-backend-mainnet"
     "PG_PORT": "5432"
