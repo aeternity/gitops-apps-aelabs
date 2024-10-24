@@ -32,10 +32,6 @@ app:
         paths:
           - path: "/"
             version: "pr-940"
-      - host: "pr-949-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-949"
       - host: "pr-960-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -79,8 +75,6 @@ app:
       gitSha: "null"
     - version: "pr-876"
       gitSha: "37c0ab6"
-    - version: "pr-949"
-      gitSha: "bb6cc42"
     - version: "pr-919"
       gitSha: "aeb41d6"
     - version: "pr-940"
