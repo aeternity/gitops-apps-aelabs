@@ -8,10 +8,6 @@ app:
         paths:
           - path: "/"
             version: "pr-876"
-      - host: "pr-915-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-915"
       - host: "pr-919-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -91,5 +87,4 @@ app:
       gitSha: "null"
     - version: "pr-965"
       gitSha: "null"
-    - {version: "pr-915", gitSha: "933e5a9"}
     - {version: "pr-934", gitSha: "5ef0488"}
