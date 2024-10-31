@@ -14,9 +14,9 @@ app:
           - path: "/"
   resources:
     limits:
-      memory: 1500Mi
+      memory: 2000Mi
     requests:
-      memory: 1000Mi
+      memory: 2000Mi
   image:
     tag: 0.17.0
   env:
