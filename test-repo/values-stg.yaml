@@ -11,11 +11,6 @@ app:
         paths:
           - path: "/"
             version: "pr-171"
-      - host: "pr-172-test-repo.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-172"
   versions:
     - version: "pr-171"
       gitSha: "6002fd9"
-    - {version: "pr-172", gitSha: "d725c22"}
