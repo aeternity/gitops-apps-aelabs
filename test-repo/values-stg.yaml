@@ -7,10 +7,6 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-170-test-repo.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-170"
       - host: "pr-171-test-repo.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -20,8 +16,6 @@ app:
           - path: "/"
             version: "pr-172"
   versions:
-    - version: "pr-170"
-      gitSha: "6faf9df"
     - version: "pr-171"
       gitSha: "6002fd9"
     - {version: "pr-172", gitSha: "d725c22"}
