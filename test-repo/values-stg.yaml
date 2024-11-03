@@ -15,7 +15,13 @@ app:
         paths:
           - path: "/"
             version: "pr-175"
+      - host: "pr-176-test-repo.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-176"
   versions:
     - version: "pr-174"
       gitSha: "dda6c3e"
-    - {version: "pr-175", gitSha: "8759224"}
+    - version: "pr-175"
+      gitSha: "8759224"
+    - version: "pr-176"
