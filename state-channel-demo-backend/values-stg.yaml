@@ -12,9 +12,14 @@ app:
         paths:
           - path: "/"
             version: "pr-269"
+      - host: "pr-274-state-channel-demo-backend.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-274"
   versions:
     - version: "pr-265"
       gitSha: "null"
+    - version: "pr-274"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
