@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-919"
-      - host: "pr-979-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-979"
       - host: "pr-989-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -40,4 +36,3 @@ app:
     - version: "pr-919"
       gitSha: "ceacb57"
     - version: "pr-989"
-    - version: "pr-979"
