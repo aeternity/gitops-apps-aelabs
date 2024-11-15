@@ -39,8 +39,10 @@ app:
   resources:
     limits:
       memory: 3500Mi
+      cpu: 2
     requests:
-      memory: 2000Mi
+      memory: 3500Mi
+      cpu: 2
   ingress:
     enabled: true
     annotations:
