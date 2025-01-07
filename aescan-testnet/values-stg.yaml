@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-919"
-      - host: "pr-989-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-989"
       - host: "pr-992-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -28,34 +24,14 @@ app:
         paths:
           - path: "/"
             version: "pr-1003"
-      - host: "pr-1006-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1006"
-      - host: "pr-1007-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1007"
-      - host: "pr-1008-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1008"
       - host: "pr-1016-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1016"
-      - host: "pr-1017-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1017"
       - host: "pr-1020-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1020"
-      - host: "pr-1021-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1021"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -75,18 +51,8 @@ app:
       gitSha: "ceacb57"
     - version: "pr-992"
       gitSha: "null"
-    - version: "pr-989"
-      gitSha: "13a3b7b"
     - version: "pr-876"
       gitSha: "596729d"
-    - version: "pr-1008"
-      gitSha: "4030b60"
-    - version: "pr-1007"
-      gitSha: "38f094b"
-    - version: "pr-1006"
-      gitSha: "24e49bc"
-    - version: "pr-1017"
-      gitSha: "null"
     - version: "pr-1003"
       gitSha: "b9076a8"
     - version: "pr-1016"
@@ -95,4 +61,3 @@ app:
       gitSha: "b08fa0b"
     - version: "pr-1020"
       gitSha: "f5d1d2e"
-    - version: "pr-1021"
