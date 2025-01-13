@@ -33,4 +33,4 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
   versions:
-    - {version: "develop", gitSha: "d0f8737"}
+    - {version: "develop", gitSha: "1b771c8"}
