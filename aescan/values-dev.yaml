@@ -30,5 +30,7 @@ app:
     "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW, ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_mainnet"
+    "NUXT_PUBLIC_ENABLE_NODES": "true"
+    "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
     - {version: "develop", gitSha: "0de2e89"}
