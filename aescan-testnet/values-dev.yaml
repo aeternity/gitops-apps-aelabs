@@ -35,4 +35,4 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
-    - {version: "develop", gitSha: "134596a"}
+    - {version: "develop", gitSha: "d5df11a"}
