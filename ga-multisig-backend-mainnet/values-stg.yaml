@@ -42,8 +42,12 @@ app:
         paths:
           - path: "/"
             version: "pr-23"
+      - host: "pr-24-ga-multisig-backend-mainnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-24"
     tls:
-      - hosts: "pr-23-ga-multisig-backend-mainnet.stg.aepps.com"
+      - hosts: "pr-23-ga-multisig-backend-mainnet.stg.aepps.compr-24-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-mainnet"
     PG_PORT: "5432"
@@ -53,3 +57,4 @@ app:
     NODE_URL: "https://mainnet.aeternity.io"
   versions:
     - version: "pr-23"
+    - version: "pr-24"
