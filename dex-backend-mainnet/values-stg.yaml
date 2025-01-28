@@ -20,14 +20,6 @@ app:
       - host: "dex-backend-mainnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-107-dex-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-107"
-      - host: "pr-112-dex-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-112"
   init:
     enabled: "true"
     command:
@@ -47,6 +39,3 @@ app:
     "DOC_PAIR": "ct_NNmdSt3Ws4r87pESGKrhGb7VJmC8zpZymXNJKHY8bTLaFttsi"
     "DOC_TOKEN1": "ct_2dE7Xd7XCg3cwpKWP18VPDwfhz5Miji9FoKMTZN7TYvGt64Kc"
     "DOC_TOKEN2": "ct_7ur9ypT3a4tjxxv5iG6zEQDQhysNtCKr6tyc7PkqhtRmEw6yY"
-  versions:
-    - version: "pr-107"
-    - version: "pr-112"
