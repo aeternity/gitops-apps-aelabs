@@ -12,50 +12,10 @@ app:
         paths:
           - path: "/"
             version: "pr-993"
-      - host: "pr-1037-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1037"
-      - host: "pr-1038-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1038"
-      - host: "pr-1040-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1040"
-      - host: "pr-1041-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1041"
-      - host: "pr-1042-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1042"
-      - host: "pr-1043-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1043"
-      - host: "pr-1044-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1044"
-      - host: "pr-1045-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1045"
       - host: "pr-1046-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1046"
-      - host: "pr-1047-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1047"
-      - host: "pr-1048-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1048"
       - host: "pr-1050-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
