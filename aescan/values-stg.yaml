@@ -28,6 +28,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1053"
+      - host: "pr-1055-aescan.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1055"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -45,7 +49,7 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw/v3"
-    "NODE_URL": https://mainnet.aeternity.io/v3
+    "NODE_URL": "https://mainnet.aeternity.io/v3"
   versions:
     - version: "pr-919"
       gitSha: "0ac1773"
@@ -56,3 +60,4 @@ app:
     - version: "pr-1051"
     - version: "pr-1052"
     - version: "pr-1053"
+    - version: "pr-1055"
