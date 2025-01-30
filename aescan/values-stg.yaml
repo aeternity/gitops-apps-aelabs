@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1052"
-      - host: "pr-1053-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1053"
       - host: "pr-1055-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -59,5 +55,4 @@ app:
       gitSha: "16cb1b8"
     - version: "pr-1051"
     - version: "pr-1052"
-    - version: "pr-1053"
     - version: "pr-1055"
