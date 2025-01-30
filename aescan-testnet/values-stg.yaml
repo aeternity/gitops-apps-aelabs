@@ -52,6 +52,8 @@ app:
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
+    "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
+    "NODE_URL": "https://testnet.aeternity.io"
   versions:
     - version: "pr-919"
       gitSha: "0ac1773"
