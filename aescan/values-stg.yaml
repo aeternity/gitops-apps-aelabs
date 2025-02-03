@@ -1,4 +1,6 @@
 app:
+  service:
+    port: 8080
   ingress:
     hosts:
       - host: "aescan.stg.service.aepps.com"
@@ -20,14 +22,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1051"
-      - host: "pr-1052-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1052"
-      - host: "pr-1055-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1055"
       - host: "pr-1056-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -70,8 +64,6 @@ app:
     - version: "pr-1046"
       gitSha: "16cb1b8"
     - version: "pr-1051"
-    - version: "pr-1052"
-    - version: "pr-1055"
     - version: "pr-1056"
     - version: "pr-1057"
     - version: "pr-1059"
