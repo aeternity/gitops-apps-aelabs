@@ -6,14 +6,6 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-919-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-919"
-      - host: "pr-993-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-993"
       - host: "pr-1046-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -22,6 +14,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1051"
+      - host: "pr-1052-aescan.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1052"
       - host: "pr-1056-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -57,13 +53,10 @@ app:
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw/v3"
     "NODE_URL": "https://mainnet.aeternity.io/v3"
   versions:
-    - version: "pr-919"
-      gitSha: "0ac1773"
-    - version: "pr-993"
-      gitSha: "79d3bb0"
     - version: "pr-1046"
       gitSha: "16cb1b8"
     - version: "pr-1051"
+    - version: "pr-1052"
     - version: "pr-1056"
     - version: "pr-1057"
     - version: "pr-1059"
