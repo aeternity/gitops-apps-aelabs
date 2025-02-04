@@ -11,66 +11,18 @@ app:
         paths:
           - path: "/"
             version: "pr-1046"
-      - host: "pr-1050-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1050"
       - host: "pr-1051-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1051"
-      - host: "pr-1052-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1052"
-      - host: "pr-1056-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1056"
-      - host: "pr-1058-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1058"
       - host: "pr-1059-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1059"
-      - host: "pr-1056-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1056"
-      - host: "pr-1060-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1060"
-      - host: "pr-1060-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1060"
-      - host: "pr-1061-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1061"
       - host: "pr-1062-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1062"
-      - host: "pr-1063-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1063"
-      - host: "pr-1064-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1064"
-      - host: "pr-1066-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1066"
-      - host: "pr-1068-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1068"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
