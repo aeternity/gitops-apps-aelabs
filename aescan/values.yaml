@@ -1,4 +1,7 @@
 app:
+  strategyType: "Recreate"
+  service:
+    port: "8080"
   image:
     tag: "0.20.0"
     repository: "aeternity/aescan"

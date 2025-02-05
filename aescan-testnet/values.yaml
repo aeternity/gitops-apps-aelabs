@@ -1,4 +1,7 @@
 app:
+  strategyType: "Recreate"
+  service:
+    port: "8080"
   image:
     repository: "aeternity/aescan"
     pullPolicy: "Always"
