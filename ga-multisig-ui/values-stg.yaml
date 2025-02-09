@@ -9,3 +9,9 @@ app:
       - host: "ga-multisig-ui.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-15-ga-multisig-ui.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-15"
+  versions:
+    - version: "pr-15"
