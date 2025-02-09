@@ -20,24 +20,30 @@ app:
       config:
         httpGet:
           path: "/health"
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
+        initialDelaySeconds: "120"
+        periodSeconds: "120"
+        successThreshold: "1"
+        timeoutSeconds: "60"
     readiness:
       config:
         httpGet:
           path: "/health"
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
+        initialDelaySeconds: "120"
+        periodSeconds: "120"
+        successThreshold: "1"
+        timeoutSeconds: "60"
   ingress:
     enabled: "true"
     hosts:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-26-ga-multisig-backend-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-26"
+    tls:
+      - hosts: "pr-26-ga-multisig-backend-testnet.stg.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-testnet"
     PG_PORT: "5432"
@@ -45,3 +51,5 @@ app:
     PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
+  versions:
+    - version: "pr-26"
