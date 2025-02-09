@@ -24,10 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-275"
-      - host: "pr-276-state-channel-demo-frontend.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-276"
   versions:
     - version: "pr-263"
       gitSha: "null"
@@ -37,4 +33,3 @@ app:
       gitSha: "df02701"
     - version: "pr-274"
     - version: "pr-275"
-    - version: "pr-276"
