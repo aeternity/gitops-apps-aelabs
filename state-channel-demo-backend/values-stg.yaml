@@ -4,13 +4,8 @@ app:
       - host: "state-channel-demo-backend.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-276-state-channel-demo-backend.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-276"
   env:
     "NODE_URL": "https://testnet.aeternity.io"
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
     "NODE_ENV": "testnet"
-  versions:
-    - version: "pr-276"
+  versions: []
