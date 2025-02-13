@@ -3,7 +3,7 @@ app:
   service:
     port: "8080"
   image:
-    tag: "0.20.0"
+    tag: "pr-1086"
     repository: "aeternity/aescan"
     pullPolicy: "Always"
   resources:
