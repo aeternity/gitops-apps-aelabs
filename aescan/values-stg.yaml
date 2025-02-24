@@ -7,10 +7,6 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1046-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1046"
       - host: "pr-1059-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -56,8 +52,6 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
-    - version: "pr-1046"
-      gitSha: "16cb1b8"
     - version: "pr-1062"
       gitSha: "a6f2744"
     - version: "pr-1059"
