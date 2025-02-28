@@ -14,7 +14,7 @@ app:
     "TOKEN_REGISTRY_ADDRESS": "ct_2n76BQCN3zNEjuEvHFNZtgyWPc5zizy47wNrUT3RHP2MrPKhbq"
     "ORACLE_CONTRACT_ADDRESS": "ct_7wqP18AHzyoqymwGaqQp8G2UpzBCggYiq7CZdJiB71VUsLpR4"
     "MIDDLEWARE_URL": "https://mainnet.aeternity.io/mdw"
-    "IPFS_URL": "http://ipfs.dev.service.aepps.com:5001"
+    "IPFS_URL": "http://ipfs.prd.service.aepps.com:5001"
     "PUBLIC_KEY": "ak_HryHrgaVUSxezLQBfNENhptKeXk6tpg4kjWBk88nsU5RJvhNk"
     "AUTHENTICATION_USER": "admin"
     "NODE_ENV": "production"
@@ -39,11 +39,11 @@ app:
     port: 3000
   resources:
     limits:
-      memory: 3500Mi
+      memory: 500Mi
       cpu: 1000m
     requests:
-      memory: 2000Mi
-      cpu: 500m
+      memory: 500Mi
+      cpu: 100m
   ingress:
     enabled: true
     hosts:
