@@ -11,3 +11,10 @@ app:
       cert-manager.io/cluster-issuer: letsencrypt
   serviceMonitor:
     enabled: false
+  resources:
+    limits:
+      memory: 100Mi
+      cpu: 200m
+    requests:
+      memory: 100Mi
+      cpu: 50m
