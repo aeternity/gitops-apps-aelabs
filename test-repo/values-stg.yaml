@@ -7,4 +7,5 @@ app:
       - host: "test-repo.stg.aepps.com"
         paths:
           - path: "/"
-  versions: []
+  versions:
+    - {version: "pr-182", gitSha: "9c72bf5"}
