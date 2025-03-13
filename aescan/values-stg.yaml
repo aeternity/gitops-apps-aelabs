@@ -7,34 +7,14 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1059-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1059"
-      - host: "pr-1062-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1062"
-      - host: "pr-1077-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1077"
       - host: "pr-1090-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1090"
-      - host: "pr-1091-aescan.stg.service.aepps.com"
+      - host: "pr-1108-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-            version: "pr-1091"
-      - host: "pr-1099-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1099"
-      - host: "pr-1100-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1100"
+            version: "pr-1108"
       - host: "pr-1102-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -72,24 +52,10 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
-    - version: "pr-1062"
-      gitSha: "a6f2744"
-    - version: "pr-1059"
-      gitSha: "369a826"
-    - version: "pr-1077"
-      gitSha: "null"
-    - version: "pr-1091"
-      gitSha: "null"
     - version: "pr-1090"
       gitSha: "adc0df6"
-    - version: "pr-1100"
+    - version: "pr-1108"
       gitSha: "07240ba"
-    - version: "pr-1102"
-      gitSha: "44e416a"
-    - version: "pr-1005"
-      gitSha: "e7ba0e6"
-    - version: "pr-1099"
-      gitSha: "8d22a43"
     - version: "pr-1105"
       gitSha: "07cc316"
     - version: "pr-1109"
