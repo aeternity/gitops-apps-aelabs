@@ -7,58 +7,10 @@ app:
       - host: "aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1059-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1059"
-      - host: "pr-1062-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1062"
-      - host: "pr-1070-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1070"
-      - host: "pr-1073-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1073"
-      - host: "pr-1078-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1078"
-      - host: "pr-1079-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1079"
       - host: "pr-1090-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1090"
-      - host: "pr-1091-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1091"
-      - host: "pr-1091-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1091"
-      - host: "pr-1096-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1096"
-      - host: "pr-1099-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1099"
-      - host: "pr-1100-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1100"
-      - host: "pr-1102-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1102"
       - host: "pr-1105-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -67,6 +19,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1109"
+      - host: "pr-1108-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-1108"
       - host: "pr-1110-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -75,6 +31,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1111"
+      - host: "pr-991-aescan-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-991"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -92,36 +52,16 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
-    - version: "pr-1062"
-      gitSha: "null"
-    - version: "pr-1059"
-      gitSha: "369a826"
-    - version: "pr-1078"
-      gitSha: "null"
-    - version: "pr-1079"
-      gitSha: "19766b0"
-    - version: "pr-1073"
-      gitSha: "d11f0a8"
-    - version: "pr-1091"
-      gitSha: "null"
-    - version: "pr-1070"
-      gitSha: "eeaf162"
-    - version: "pr-1091"
-      gitSha: "null"
-    - version: "pr-1096"
-      gitSha: "9f491d3"
-    - version: "pr-1100"
-      gitSha: "07240ba"
-    - version: "pr-1102"
-      gitSha: "44e416a"
     - version: "pr-1090"
       gitSha: "481ed4d"
-    - version: "pr-1099"
-      gitSha: "8d22a43"
     - version: "pr-1109"
+      gitSha: "null"
+    - version: "pr-1108"
       gitSha: "null"
     - version: "pr-1110"
       gitSha: "null"
     - version: "pr-1111"
+      gitSha: "null"
+    - version: "pr-991"
       gitSha: "null"
     - {version: "pr-1105", gitSha: "de61aa7"}
