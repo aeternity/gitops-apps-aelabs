@@ -11,10 +11,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1090"
-      - host: "pr-1108-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1108"
       - host: "pr-1102-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -54,8 +50,6 @@ app:
   versions:
     - version: "pr-1090"
       gitSha: "adc0df6"
-    - version: "pr-1108"
-      gitSha: "07240ba"
     - version: "pr-1105"
       gitSha: "07cc316"
     - version: "pr-1109"
