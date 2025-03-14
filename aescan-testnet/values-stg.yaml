@@ -57,11 +57,11 @@ app:
     - version: "pr-1109"
       gitSha: "null"
     - version: "pr-1108"
-      gitSha: "null"
+      gitSha: ""
     - version: "pr-1110"
       gitSha: "null"
     - version: "pr-1111"
       gitSha: "null"
     - version: "pr-991"
-      gitSha: "null"
+      gitSha: ""
     - {version: "pr-1105", gitSha: ""}
