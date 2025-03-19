@@ -19,10 +19,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1110"
-      - host: "pr-1111-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1111"
       - host: "pr-1114-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -49,8 +45,6 @@ app:
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
     - version: "pr-1110"
-      gitSha: "null"
-    - version: "pr-1111"
       gitSha: "null"
     - version: "pr-1090"
       gitSha: "ad46d56"
