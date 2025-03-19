@@ -36,6 +36,5 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
   versions:
-    - version: "pr-1090"
-      gitSha: "ad46d56"
     - {version: "pr-1109", gitSha: "931689c"}
+    - {version: "pr-1090", gitSha: "f6ec366"}
