@@ -39,10 +39,6 @@ app:
         paths:
           - path: "/"
             version: "pr-1127"
-      - host: "pr-1131-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1131"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -76,4 +72,3 @@ app:
       gitSha: "fc9d77a"
     - version: "pr-1090"
       gitSha: "fd8cc8f"
-    - version: "pr-1131"
