@@ -39,3 +39,5 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway.prd.service.aepps.com"
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
+    "NUXT_PUBLIC_ENABLE_MINING": "true"
+
