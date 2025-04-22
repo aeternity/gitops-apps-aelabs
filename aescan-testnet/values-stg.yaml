@@ -59,6 +59,7 @@ app:
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
+    "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
     - version: "pr-1110"
       gitSha: "null"
