@@ -4,4 +4,9 @@ app:
       - host: "dex.stg.service.aepps.com"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-537-dex-ui.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-537"
+  versions:
+    - version: "pr-537"
