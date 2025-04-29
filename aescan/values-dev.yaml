@@ -37,4 +37,4 @@ app:
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
-    - {version: "develop", gitSha: "a96969a"}
+    - {version: "develop", gitSha: "739ceca"}
