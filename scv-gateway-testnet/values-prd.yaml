@@ -20,7 +20,7 @@ app:
     "MQ_HOST": "rabbitmq-headless.rabbitmq.svc.superhero-prd"
     "MQ_PORT": "5672"
     "MQ_USERNAME": "admin"
-    "AE_MDW_URL": "https://testnet.aeternity.io/mdw"
+    "AE_MDW_URL": "https://mainnet.aeternity.io/mdw"
     "MQ_VERIFICATION_QUEUE": "verification_queue_testnet"
   image:
     repository: "aeternity/smart-contract-verifier"
