@@ -7,38 +7,10 @@ app:
       - host: "aescan.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1102-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1102"
-      - host: "pr-1118-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1118"
       - host: "pr-1119-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1119"
-      - host: "pr-1120-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1120"
-      - host: "pr-1127-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1127"
-      - host: "pr-1141-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1141"
-      - host: "pr-1143-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1143"
-      - host: "pr-1145-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1145"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.stg.service.aepps.com"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -57,20 +29,4 @@ app:
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
-    - version: "pr-1118"
-      gitSha: "null"
-    - version: "pr-1120"
-      gitSha: "0ae6d87"
-    - version: "pr-1127"
-      gitSha: "null"
-    - version: "pr-1135"
-      gitSha: "438e0f1"
-    - version: "pr-1128"
-      gitSha: "43d7d5e"
-    - version: "pr-1141"
-      gitSha: "null"
-    - version: "pr-1143"
-      gitSha: "null"
-    - version: "pr-1145"
-      gitSha: "null"
     - {version: "pr-1119", gitSha: "69d26e4"}
