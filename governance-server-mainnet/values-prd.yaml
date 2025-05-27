@@ -1,0 +1,8 @@
+app:
+  ingress:
+    hosts:
+      - host: "governance-server-mainnet.prd.service.aepps.com"
+        paths:
+          - path: "/"
+  image:
+    tag: governance-server-v1.0.1
