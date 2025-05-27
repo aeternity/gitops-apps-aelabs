@@ -1,6 +1,7 @@
 app:
-  image:
-    tag: "latest"
+  image: 
+    repository: public.ecr.aws/aeternity/aepp-governance
+    tag: "governance-aepp-v1.0.1"
     pullPolicy: "Always"
 
   probes:
