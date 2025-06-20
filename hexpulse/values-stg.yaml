@@ -8,5 +8,10 @@ app:
         paths:
           - path: "/"
             version: "pr-541"
+      - host: "pr-544.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-544"
   versions:
     - version: "pr-541"
+    - version: "pr-544"
