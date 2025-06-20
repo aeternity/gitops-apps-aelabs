@@ -1,7 +1,9 @@
 app:
+  imagePullSecrets:
+  - name: dockerhub-secret
   image:
     repository: superherodotcom/ccga5tw
-    tag: "latest"
+    tag: "pr-542"
     pullPolicy: "Always"
   ingress:
     enabled: true
