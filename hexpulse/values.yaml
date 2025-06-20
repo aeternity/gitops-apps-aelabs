@@ -1,5 +1,6 @@
 app:
   image:
+    repository: superherodotcom/ccga5tw
     tag: "latest"
     pullPolicy: "Always"
   ingress:
