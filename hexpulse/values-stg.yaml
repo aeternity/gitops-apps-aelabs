@@ -4,3 +4,9 @@ app:
       - host: "pr.wordcraft.fun"
         paths:
           - path: "/"
+      - host: "pr-541-hexpulse.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-541"
+  versions:
+    - version: "pr-541"
