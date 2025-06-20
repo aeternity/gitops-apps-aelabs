@@ -1,17 +1,14 @@
-encValues:
-  .dockerconfigjson:
-
 app:
   ingress:
     hosts:
-      - host: "pr.wordcraft.fun"
+      - host: "stg.wordcraft.fun"
         paths:
           - path: "/"
-      - host: "pr-541.pr.wordcraft.fun"
+      - host: "pr-541.stg.wordcraft.fun"
         paths:
           - path: "/"
             version: "pr-541"
-      - host: "pr-542.pr.wordcraft.fun"
+      - host: "pr-542.stg.wordcraft.fun"
         paths:
           - path: "/"
             version: "pr-542"
