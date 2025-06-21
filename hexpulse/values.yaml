@@ -3,7 +3,7 @@ app:
   - name: dockerhub-secret
   image:
     repository: superherodotcom/ccga5tw
-    tag: "pr-542"
+    tag: "main"
     pullPolicy: "Always"
   ingress:
     enabled: true
