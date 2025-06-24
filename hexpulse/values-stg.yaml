@@ -11,4 +11,4 @@ app:
   versions:
     - version: "develop"
       gitSha: "null"
-    - version: "pr-551"
+    - {version: "pr-551", gitSha: "bc7a8761"}
