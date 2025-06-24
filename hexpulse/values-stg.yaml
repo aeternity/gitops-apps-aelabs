@@ -4,18 +4,6 @@ app:
       - host: "stg.wordcraft.fun"
         paths:
           - path: "/"
-      - host: "pr-541.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-541"
-      - host: "pr-544.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-544"
   versions:
-    - version: "pr-541"
+    - version: "develop"
       gitSha: "null"
-    - version: "pr-544"
-      gitSha: "b749f9b"
-    - version: "pr-550"
-      gitSha: "8ed5b7b"
