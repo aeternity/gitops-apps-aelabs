@@ -4,4 +4,9 @@ app:
       - host: "stg.wordcraft.fun"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-552.stg.wordcraft.fun"
+        paths:
+          - path: "/"
+            version: "pr-552"
+  versions:
+    - version: "pr-552"
