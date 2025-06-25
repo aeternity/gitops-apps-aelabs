@@ -4,9 +4,4 @@ app:
       - host: "stg.wordcraft.fun"
         paths:
           - path: "/"
-      - host: "pr-550.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-550"
-  versions:
-    - {version: "pr-550", gitSha: "52f3ee2e"}
+  versions: []
