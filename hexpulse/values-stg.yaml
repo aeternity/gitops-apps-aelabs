@@ -21,10 +21,10 @@ app:
           - path: "/"
             version: "pr-566"
   versions:
-    - version: "pr-548"
-      gitSha: "ff0610e6"
     - version: "pr-558"
       gitSha: "null"
     - version: "pr-559"
       gitSha: "null"
     - version: "pr-566"
+      gitSha: "null"
+    - {version: "pr-548", gitSha: "3d2f4ec0"}
