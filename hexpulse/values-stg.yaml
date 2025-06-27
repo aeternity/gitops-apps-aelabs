@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-558"
-      - host: "pr-559.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-559"
       - host: "pr-566.stg.wordcraft.fun"
         paths:
           - path: "/"
@@ -44,4 +40,3 @@ app:
     - version: "pr-548"
       gitSha: "f7d1bb12"
     - {version: "pr-580", gitSha: "4ba46104"}
-    - {version: "pr-559", gitSha: "0e1cd1d3"}
