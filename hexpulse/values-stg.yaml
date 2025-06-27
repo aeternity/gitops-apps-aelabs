@@ -20,10 +20,17 @@ app:
         paths:
           - path: "/"
             version: "pr-566"
+      - host: "pr-574.stg.wordcraft.fun"
+        paths:
+          - path: "/"
+            version: "pr-574"
   versions:
     - version: "pr-558"
       gitSha: "null"
     - version: "pr-566"
       gitSha: "null"
-    - {version: "pr-548", gitSha: "3d2f4ec0"}
-    - {version: "pr-559", gitSha: "77d2c173"}
+    - version: "pr-548"
+      gitSha: "3d2f4ec0"
+    - version: "pr-559"
+      gitSha: "77d2c173"
+    - version: "pr-574"
