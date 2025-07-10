@@ -1,0 +1,8 @@
+app:
+  service:
+    port: "80"
+  ingress:
+    hosts:
+      - host: "sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
