@@ -6,3 +6,9 @@ app:
       - host: "sol.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-52-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-52"
+  versions:
+    - version: "pr-52"
