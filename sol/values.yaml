@@ -1,8 +1,9 @@
 app:
+  imagePullSecrets:
+  - name: dockerhub-secret
   service:
     port: "80"
   image:
-    tag: "develop"
     repository: "superherodotcom/sol"
     pullPolicy: "Always"
   resources:
