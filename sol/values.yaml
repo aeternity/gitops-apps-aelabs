@@ -3,7 +3,7 @@ app:
     port: "80"
   image:
     tag: "develop"
-    repository: "aeternity/sol"
+    repository: "superherodotcom/sol"
     pullPolicy: "Always"
   resources:
     limits:
