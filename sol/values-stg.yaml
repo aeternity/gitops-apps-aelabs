@@ -22,5 +22,11 @@ app:
         paths:
           - path: "/"
             version: "pr-52"
+      - host: "pr-52-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-52"
   versions:
-    - {version: "pr-52", gitSha: "3f2bc355"}
+    - version: "pr-52"
+      gitSha: "3f2bc355"
+    - version: "pr-52"
