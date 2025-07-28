@@ -60,6 +60,10 @@ app:
         paths:
           - path: "/"
             version: "pr-599"
+      - host: "pr-601.stg.wordcraft.fun"
+        paths:
+          - path: "/"
+            version: "pr-601"
   versions:
     - version: "pr-558"
       gitSha: "null"
@@ -79,8 +83,14 @@ app:
       gitSha: "null"
     - version: "pr-585"
       gitSha: "6f50b9ff"
-    - {version: "pr-599", gitSha: "867c7159"}
-    - {version: "pr-546", gitSha: "0a23db08"}
-    - {version: "pr-534", gitSha: "5edd1e9d"}
-    - {version: "pr-576", gitSha: "27364aa8"}
-    - {version: "pr-575", gitSha: "4f64b75e"}
+    - version: "pr-599"
+      gitSha: "867c7159"
+    - version: "pr-546"
+      gitSha: "0a23db08"
+    - version: "pr-534"
+      gitSha: "5edd1e9d"
+    - version: "pr-576"
+      gitSha: "27364aa8"
+    - version: "pr-575"
+      gitSha: "4f64b75e"
+    - version: "pr-601"
