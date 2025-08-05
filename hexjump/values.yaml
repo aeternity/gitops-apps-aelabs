@@ -1,8 +1,6 @@
 app:
   image:
-    repository: nginxdemos/hello
-    tag: "main"
-    pullPolicy: "Always"
+    repository: nginxdemos/hello    
   ingress:
     enabled: true
     annotations:
