@@ -1,0 +1,21 @@
+app:
+  imagePullSecrets:
+  - name: dockerhub-secret
+  image:
+    repository: superherodotcom/ccga5tw
+    tag: "main"
+    pullPolicy: "Always"
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+  serviceMonitor:
+    enabled: false
+  resources:
+    limits:
+      memory: 1500Mi
+      cpu: 1500m
+    requests:
+      memory: 1500Mi
+      cpu: 100m

@@ -1,0 +1,6 @@
+app:
+  ingress:
+    hosts:
+      - host: "stg.trendminer.fun"
+        paths:
+          - path: "/"
