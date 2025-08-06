@@ -1,10 +1,10 @@
 app:
   ingress:
     hosts:
-      - host: "test.stg.trendminer.fun"
+      - host: "stg.trendminer.fun"
         paths:
           - path: "/"
     tls:
       - hosts:
-        - "test.stg.trendminer.fun"
+        - "stg.trendminer.fun"
         secretName: test-cert
