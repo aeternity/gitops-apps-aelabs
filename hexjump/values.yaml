@@ -3,7 +3,7 @@ app:
   - name: dockerhub-secret
   image:
     repository: superherodotcom/acad56w
-    tag: "latest"
+    tag: "develop"
     pullPolicy: "Always"
   ingress:
     enabled: true
