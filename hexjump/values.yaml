@@ -1,6 +1,8 @@
 app:
+  imagePullSecrets:
+  - name: dockerhub-secret
   image:
-    repository: nginxdemos/hello
+    repository: superherodotcom/acad56w
     tag: "latest"
     pullPolicy: "Always"
   ingress:
