@@ -20,3 +20,8 @@ app:
     requests:
       memory: 1500Mi
       cpu: 100m
+  probes:
+    liveness:
+      enabled: false
+    readiness:
+      enabled: false
