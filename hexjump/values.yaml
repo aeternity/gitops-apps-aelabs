@@ -1,4 +1,6 @@
 app:
+  imagePullSecrets:
+  - name: dockerhub-secret
   image:
     repository: superherodotcom/acad56w
     tag: "pr-2"
