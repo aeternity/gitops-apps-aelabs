@@ -8,46 +8,14 @@ app:
         paths:
           - path: "/"
             version: "pr-558"
-      - host: "pr-566.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-566"
       - host: "pr-575.stg.wordcraft.fun"
         paths:
           - path: "/"
             version: "pr-575"
-      - host: "pr-576.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-576"
-      - host: "pr-580.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-580"
-      - host: "pr-548.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-548"
-      - host: "pr-583.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-583"
-      - host: "pr-585.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-585"
-      - host: "pr-587.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-587"
       - host: "pr-595.stg.wordcraft.fun"
         paths:
           - path: "/"
             version: "pr-595"
-      - host: "pr-596.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-596"
       - host: "pr-546.stg.wordcraft.fun"
         paths:
           - path: "/"
@@ -56,26 +24,6 @@ app:
         paths:
           - path: "/"
             version: "pr-534"
-      - host: "pr-599.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-599"
-      - host: "pr-601.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-601"
-      - host: "pr-602.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-602"
-      - host: "pr-603.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-603"
-      - host: "pr-604.stg.wordcraft.fun"
-        paths:
-          - path: "/"
-            version: "pr-604"
       - host: "pr-606.stg.wordcraft.fun"
         paths:
           - path: "/"
@@ -83,33 +31,7 @@ app:
   versions:
     - version: "pr-558"
       gitSha: "null"
-    - version: "pr-566"
-      gitSha: "null"
-    - version: "pr-580"
-      gitSha: "4ba46104"
-    - version: "pr-548"
-      gitSha: "aaac0c5a"
-    - version: "pr-583"
-      gitSha: "null"
-    - version: "pr-587"
-      gitSha: "e69786da"
     - version: "pr-595"
-      gitSha: "null"
-    - version: "pr-596"
-      gitSha: "null"
-    - version: "pr-585"
-      gitSha: "6f50b9ff"
-    - version: "pr-599"
-      gitSha: "867c7159"
-    - version: "pr-576"
-      gitSha: "27364aa8"
-    - version: "pr-602"
-      gitSha: "null"
-    - version: "pr-601"
-      gitSha: "41ef4e10"
-    - version: "pr-603"
-      gitSha: "null"
-    - version: "pr-604"
       gitSha: "null"
     - version: "pr-546"
       gitSha: "8d9cb7e2"
