@@ -4,13 +4,4 @@ app:
       - host: "stg.trendminer.fun"
         paths:
           - path: "/"
-      - host: "pr-3-hexjump.stg.trendminer.fun"
-        paths:
-          - path: "/"
-            version: "pr-3"
-      - host: "pr-3-hexjump.stg.trendminer.fun"
-        paths:
-          - path: "/"
-            version: "pr-3"
-  versions:
-    - {version: "pr-3", gitSha: "f359951b"}
+  versions: []
