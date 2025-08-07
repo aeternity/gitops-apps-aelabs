@@ -4,4 +4,3 @@ app:
       - host: "stg.trendminer.fun"
         paths:
           - path: "/"
-
