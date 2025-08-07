@@ -4,7 +4,3 @@ app:
       - host: "stg.trendminer.fun"
         paths:
           - path: "/"
-    tls:
-      - hosts:
-        - "stg.trendminer.fun"
-        secretName: test-cert
