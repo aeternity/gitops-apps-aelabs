@@ -12,5 +12,11 @@ app:
         paths:
           - path: "/"
             version: "pr-4"
+      - host: "pr-4-hexjump.stg.trendminer.fun"
+        paths:
+          - path: "/"
+            version: "pr-4"
   versions:
-    - {version: "pr-4", gitSha: "133eade3"}
+    - version: "pr-4"
+      gitSha: "133eade3"
+    - version: "pr-4"
