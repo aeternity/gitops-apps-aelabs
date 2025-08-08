@@ -4,4 +4,9 @@ app:
       - host: "stg.trendminer.fun"
         paths:
           - path: "/"
-  versions: []
+      - host: "pr-4-hexjump.stg.trendminer.fun"
+        paths:
+          - path: "/"
+            version: "pr-4"
+  versions:
+    - version: "pr-4"
