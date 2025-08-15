@@ -8,5 +8,10 @@ app:
         paths:
           - path: "/"
             version: "pr-5"
+      - host: "pr-5-hexjump.stg.trendminer.fun"
+        paths:
+          - path: "/"
+            version: "pr-5"
   versions:
+    - version: "pr-5"
     - version: "pr-5"
