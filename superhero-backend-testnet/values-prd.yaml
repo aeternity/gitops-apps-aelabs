@@ -13,7 +13,7 @@ app:
     "TOKEN_REGISTRY_ADDRESS": "ct_2Ga3mNT8er2zYjGKx7tJggn9nVnYt5UzmH9x9irRV4ayg4sfLL"
     "ORACLE_CONTRACT_ADDRESS": "ct_2PbBVGroJ2G618tHbWEWRrrxxf1BAn7Qt7BoNcLh3LqsSck8Lu"
     "WORD_REGISTRY_CONTRACT": "ct_2vTMtHgJTxTpsQ8Tm3o6DmfDkhc3vM4DefV845Yp9FSDuS6YWB"
-    "MIDDLEWARE_URL": "https://mdw.testnet.aeternity.io"
+    "MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw"
     "NODE_URL": "https://testnet.aeternity.io"
     "IPFS_URL": "http://ipfs.prd.service.aepps.com:5001"
     "PUBLIC_KEY": "ak_fUq2NesPXcYZ1CcqBcGC3StpdnQw3iVxMA3YSeCNAwfN4myQk"
