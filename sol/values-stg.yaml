@@ -39,6 +39,4 @@ app:
           - path: "/"
             version: "pr-164"
   versions:
-    - version: "pr-164"
-      gitSha: "342e2c32"
-    - version: "pr-164"
+    - {version: "pr-164", gitSha: "604e6d09"}
