@@ -26,4 +26,9 @@ app:
         paths:
           - path: "/"
             version: "pr-52"
-  versions: []
+      - host: "pr-164-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-164"
+  versions:
+    - version: "pr-164"
