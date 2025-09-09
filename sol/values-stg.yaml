@@ -30,5 +30,11 @@ app:
         paths:
           - path: "/"
             version: "pr-164"
+      - host: "pr-164-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-164"
   versions:
-    - {version: "pr-164", gitSha: "e7c4202d"}
+    - version: "pr-164"
+      gitSha: "e7c4202d"
+    - version: "pr-164"
