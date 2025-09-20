@@ -91,6 +91,4 @@ app:
       gitSha: "c0e980bd"
     - version: "pr-169"
       gitSha: "652789fb"
-    - version: "pr-184"
-      gitSha: "2c15c390"
-    - version: "pr-184"
+    - {version: "pr-184", gitSha: "c6ad2af9"}
