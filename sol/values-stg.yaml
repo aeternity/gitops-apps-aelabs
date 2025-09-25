@@ -173,4 +173,4 @@ app:
       gitSha: "652789fb"
     - version: "pr-"
       gitSha: "d0b488cf"
-    - version: "sol-"
+    - {version: "sol-", gitSha: "2906072c"}
