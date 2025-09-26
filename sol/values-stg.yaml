@@ -6,14 +6,6 @@ app:
       - host: "sol.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-164-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-164"
-      - host: "pr-164-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-164"
       - host: "pr-168-sol.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -22,10 +14,6 @@ app:
         paths:
           - path: "/"
             version: "pr-169"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
       - host: "pr--sol.stg.service.aepps.com"
         paths:
           - path: "/"
