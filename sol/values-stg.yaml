@@ -6,26 +6,6 @@ app:
       - host: "sol.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-52-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-52"
-      - host: "pr-52-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-52"
-      - host: "pr-52-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-52"
-      - host: "pr-52-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-52"
-      - host: "pr-52-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-52"
       - host: "pr-164-sol.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -34,22 +14,6 @@ app:
         paths:
           - path: "/"
             version: "pr-164"
-      - host: "pr-164-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-164"
-      - host: "pr-168-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-168"
-      - host: "pr-168-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-168"
-      - host: "pr-168-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-168"
       - host: "pr-168-sol.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -62,115 +26,19 @@ app:
         paths:
           - path: "/"
             version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
-      - host: "pr-184-sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-184"
       - host: "pr--sol.stg.service.aepps.com"
         paths:
           - path: "/"
-            version: "pr-"
-      - host: "pr--sol.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-"
+            version: "pr"
       - host: "sol--sol.stg.service.aepps.com"
         paths:
           - path: "/"
-            version: "sol-"
+            version: "sol"
   versions:
     - version: "pr-168"
       gitSha: "c0e980bd"
     - version: "pr-169"
       gitSha: "652789fb"
-    - version: "pr-"
+    - version: "pr"
       gitSha: "d0b488cf"
-    - {version: "sol-", gitSha: "2906072c"}
+    - {version: "sol", gitSha: "2906072c"}
