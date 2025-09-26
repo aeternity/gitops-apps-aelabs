@@ -34,4 +34,4 @@ app:
       gitSha: "652789fb"
     - version: "main"
       gitSha: "04859942"
-    - version: "186"
+    - {version: "186", gitSha: "45d54c35"}
