@@ -26,4 +26,4 @@ app:
       gitSha: "652789fb"
     - version: "sha-44bda8c"
       gitSha: "44bda8c"
-    - version: "sol-"
+    - {version: "sol-", gitSha: "4258116b"}
