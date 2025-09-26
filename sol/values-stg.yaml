@@ -31,4 +31,5 @@ app:
     - version: "sha-44bda8c"
       gitSha: "44bda8c"
     - version: "main"
-    - version: "sol-main"
+      gitSha: "null"
+    - {version: "sol-main", gitSha: "5d7ea069"}
