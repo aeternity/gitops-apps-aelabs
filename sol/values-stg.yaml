@@ -6,6 +6,7 @@ app:
       - host: "sol.stg.service.aepps.com"
         paths:
           - path: "/"
+            version: "latest"
       - host: "pr-168-sol.stg.service.aepps.com"
         paths:
           - path: "/"
