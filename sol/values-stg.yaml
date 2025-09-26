@@ -19,6 +19,10 @@ app:
         paths:
           - path: "/"
             version: "main"
+      - host: "main-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "main"
   versions:
     - version: "pr-168"
       gitSha: "c0e980bd"
@@ -26,3 +30,4 @@ app:
       gitSha: "652789fb"
     - version: "main"
       gitSha: "null"
+    - version: "main"
