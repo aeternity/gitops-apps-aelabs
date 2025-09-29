@@ -4,35 +4,15 @@ app:
       - host: "state-channel-demo.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-263-state-channel-demo-frontend.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-263"
-      - host: "pr-269-state-channel-demo-frontend.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-269"
-      - host: "pr-270-state-channel-demo-frontend.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-270"
       - host: "pr-274-state-channel-demo-frontend.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-274"
-      - host: "pr-275-state-channel-demo-frontend.stg.service.aepps.com"
+      - host: "pr-278-state-channel-demo-frontend.stg.service.aepps.com"
         paths:
           - path: "/"
-            version: "pr-275"
+            version: "pr-278"
   versions:
-    - version: "pr-263"
-      gitSha: "null"
-    - version: "pr-269"
-      gitSha: "null"
-    - version: "pr-270"
-      gitSha: "df02701"
     - version: "pr-274"
-      gitSha: "null"
-    - version: "pr-275"
       gitSha: "null"
     - {version: "pr-278", gitSha: "c924587"}
