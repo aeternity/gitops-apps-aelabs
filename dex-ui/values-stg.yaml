@@ -8,6 +8,11 @@ app:
         paths:
           - path: "/"
             version: "pr-537"
+      - host: "pr-543-dex-ui.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-543"
   versions:
     - version: "pr-537"
       gitSha: "b398445"
+    - version: "pr-543"
