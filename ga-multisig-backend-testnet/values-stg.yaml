@@ -39,8 +39,9 @@ app:
         paths:
           - path: "/"
     tls:
-      hosts:
+      - hosts:
         - "ga-multisig-backend-testnet.stg.service.aepps.com"
+        secretName: ga-multisig-backend-testnet-tls
   env:
     PG_DB: "ga-multisig-backend-testnet"
     PG_PORT: "5432"
