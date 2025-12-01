@@ -38,12 +38,9 @@ app:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-26-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-26"
     tls:
-      - hosts: "pr-26-ga-multisig-backend-testnet.stg.aepps.com"
+      hosts:
+        - "ga-multisig-backend-testnet.stg.service.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-testnet"
     PG_PORT: "5432"
