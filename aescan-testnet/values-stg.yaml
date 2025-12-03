@@ -22,6 +22,11 @@ app:
       - host: "testnet.aescan.io"
         paths:
           - path: "/"
+            version: "pr-1156"
+      - host: "www.testnet.aescan.io"
+        paths:
+          - path: "/"
+            version: "pr-1156"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "testnet.aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -37,7 +42,7 @@ app:
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway-testnet.stg.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_uat"
     "NUXT_PUBLIC_ENABLE_NODES": "true"
-    "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
+    "NUXT_PUBLIC_ENABLE_MARKET_STATS": "false"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
     - version: "pr-1119"
