@@ -42,7 +42,7 @@ app:
       - host: "www.aescan.io"
         paths:
           - path: "/"
-            version: "latest"
+            version: "0.24.2"
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
@@ -73,4 +73,3 @@ app:
       gitSha: "null"
     - version: "pr-1156"
     - version: "0.24.2"
-    - version: "latest"
