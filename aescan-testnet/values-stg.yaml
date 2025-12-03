@@ -11,26 +11,10 @@ app:
         paths:
           - path: "/"
             version: "pr-1119"
-      - host: "pr-1148-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1148"
       - host: "pr-1149-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
             version: "pr-1149"
-      - host: "pr-1153-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1153"
-      - host: "pr-1154-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1154"
-      - host: "pr-1155-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1155"
       - host: "pr-1156-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -43,7 +27,7 @@ app:
     "NUXT_PUBLIC_SENTRY_DSN": "http://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
     "NUXT_PUBLIC_NETWORK_NAME": "TESTNET"
     "NUXT_PUBLIC_MIDDLEWARE_URL": "https://testnet.aeternity.io/mdw/v3"
-    "NUXT_PUBLIC_NODE_URL": "https://mdw.testnet.aeternity.io/v3"
+    "NUXT_PUBLIC_NODE_URL": "https://testnet.aeternity.io/v3"
     "NUXT_PUBLIC_WEBSOCKET_URL": "wss://testnet.aeternity.io/mdw/v2/websocket"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_NAME": "MAINNET"
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://aescan.io"
@@ -58,10 +42,6 @@ app:
   versions:
     - version: "pr-1119"
       gitSha: "69d26e4"
-    - version: "pr-1148"
-      gitSha: "null"
     - version: "pr-1149"
       gitSha: "cdefac6"
-    - version: "pr-1153"
-      gitSha: "null"
     - version: "pr-1156"
