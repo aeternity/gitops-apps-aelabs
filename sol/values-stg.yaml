@@ -76,8 +76,6 @@ app:
       gitSha: "a1da519f"
     - version: "pr-187"
       gitSha: "null"
-    - version: "pr-118"
-      gitSha: "790102b6"
     - version: "pr-101"
       gitSha: "b67188ce"
     - version: "pr-107"
