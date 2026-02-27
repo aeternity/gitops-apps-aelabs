@@ -194,4 +194,3 @@ app:
       gitSha: "652789fb"
     - version: "main"
       gitSha: "a1da519f"
-    - {version: "pr-203", gitSha: "0b902c3a"}
