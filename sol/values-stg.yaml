@@ -267,6 +267,10 @@ app:
         paths:
           - path: "/"
             version: "pr-143"
+      - host: "pr-209-sol.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-209"
   versions:
     - version: "pr-168"
       gitSha: "c0e980bd"
@@ -276,4 +280,6 @@ app:
       gitSha: "a1da519f"
     - version: "pr-209"
       gitSha: "2e535ddd"
-    - {version: "pr-143", gitSha: "87c4c43e"}
+    - version: "pr-143"
+      gitSha: "87c4c43e"
+    - version: "pr-209"
