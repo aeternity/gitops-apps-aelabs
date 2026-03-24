@@ -54,4 +54,3 @@ app:
     - version: "pr-1149"
       gitSha: "cdefac6"
     - version: "pr-1156"
-    - version: "pr-1158"
