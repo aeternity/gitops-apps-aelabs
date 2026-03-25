@@ -59,4 +59,3 @@ app:
       gitSha: "cdefac6"
     - version: "pr-1156"
       gitSha: "null"
-    - {version: "pr-1159", gitSha: "1c219dbc579c4ec73e140c10f9f6414ac173db1b"}
