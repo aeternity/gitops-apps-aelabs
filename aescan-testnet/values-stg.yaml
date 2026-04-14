@@ -7,62 +7,12 @@ app:
       - host: "aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-1119-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1119"
-      - host: "pr-1149-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1149"
-      - host: "pr-1156-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1156"
       - host: "testnet.aescan.io"
         paths:
           - path: "/"
-            version: "pr-1156"
       - host: "www.testnet.aescan.io"
         paths:
           - path: "/"
-            version: "pr-1156"
-      - host: "pr-1158-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1158"
-      - host: "pr-1159-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1159"
-      - host: "pr-1160-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1160"
-      - host: "pr-1162-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1162"
-      - host: "pr-1163-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1163"
-      - host: "pr-1164-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1164"
-      - host: "pr-1165-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1165"
-      - host: "pr-1166-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1166"
-      - host: "pr-1167-aescan-testnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1167"
       - host: "pr-1168-aescan-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -85,16 +35,4 @@ app:
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "false"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
-    - version: "pr-1119"
-      gitSha: "69d26e4"
-    - version: "pr-1156"
-      gitSha: "null"
-    - version: "pr-1160"
-      gitSha: "null"
-    - version: "pr-1162"
-      gitSha: "fe96543ce933420d5f1b077efb353b562e2ff7f4"
-    - version: "pr-1164"
-      gitSha: "faf2d330e6e9a523dd11ce2954c6fc4742749147"
-    - version: "pr-1166"
-      gitSha: "null"
     - version: "pr-1168"
