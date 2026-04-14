@@ -24,6 +24,10 @@ app:
         paths:
           - path: "/"
             version: "pr-117"
+      - host: "pr-117-dex-backend-mainnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-117"
   init:
     enabled: "true"
     command:
@@ -46,4 +50,5 @@ app:
   versions:
     - version: "pr-116"
       gitSha: "271154d"
+    - version: "pr-117"
     - version: "pr-117"
