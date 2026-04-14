@@ -13,10 +13,6 @@ app:
       - host: "www.aescan.io"
         paths:
           - path: "/"
-      - host: "pr-1166-aescan.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-1166"
       - host: "pr-1168-aescan.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -32,12 +28,11 @@ app:
     "NUXT_PUBLIC_ALTERNATIVE_NETWORK_URL": "https://testnet.aescan.io"
     "NUXT_PUBLIC_DEX_BACKEND_URL": "https://dex-backend-mainnet.prd.service.aepps.com"
     "NUXT_PUBLIC_AE_TOKEN_ID": "ct_J3zBY8xxjsRr3QojETNw48Eb38fjvEuJKkQ6KzECvubvEcvCa"
-    "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW, ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
+    "NUXT_PUBLIC_SH_DEX_CONTRACTS": "ct_2mfj3FoZxnhkSw5RZMcP8BfPoB1QR4QiYGNCdkAvLZ1zfF6paW;ct_azbNZ1XrPjXfqBqbAh1ffLNTQ1sbnuUDFvJrXjYz7JQA1saQ3"
     "NUXT_PUBLIC_CONTRACT_VERIFICATION_SERVICE_URL": "https://scv-gateway.dev.service.aepps.com"
     "NUXT_PUBLIC_NETWORK_ID": "ae_mainnet"
     "NUXT_PUBLIC_ENABLE_NODES": "true"
-    "NUXT_PUBLIC_ENABLE_MARKET_STATS": "false"
+    "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
-    - version: "pr-1166"
     - version: "pr-1168"
