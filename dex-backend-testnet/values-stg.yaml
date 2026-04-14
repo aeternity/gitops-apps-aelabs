@@ -24,6 +24,10 @@ app:
         paths:
           - path: "/"
             version: "pr-117"
+      - host: "pr-117-dex-backend-testnet.stg.service.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-117"
   init:
     enabled: "true"
     command:
@@ -44,4 +48,6 @@ app:
     "DOC_TOKEN1": "ct_b7FZHQzBcAW4r43ECWpV3qQJMQJp5BxkZUGNKrqqLyjVRN3SC"
     "DOC_TOKEN2": "ct_JDp175ruWd7mQggeHewSLS1PFXt9AzThCDaFedxon8mF8xTRF"
   versions:
-    - {version: "pr-117", gitSha: "f9ca4af849ba65378037970b03956b2f02b6f0f0"}
+    - version: "pr-117"
+      gitSha: "f9ca4af849ba65378037970b03956b2f02b6f0f0"
+    - version: "pr-117"
