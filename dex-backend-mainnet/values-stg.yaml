@@ -20,10 +20,6 @@ app:
       - host: "dex-backend-mainnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-117-dex-backend-mainnet.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-117"
   init:
     enabled: "true"
     command:
