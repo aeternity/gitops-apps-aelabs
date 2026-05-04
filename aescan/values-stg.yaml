@@ -40,5 +40,4 @@ app:
     "NUXT_PUBLIC_ENABLE_NODES": "true"
     "NUXT_PUBLIC_ENABLE_MARKET_STATS": "true"
     "NUXT_PUBLIC_ENABLE_MINING": "true"
-  versions:
-    - {version: "pr-1169", gitSha: "2dbd5d7fa5487acd2bd7c5c05b116efb8d70355a"}
+  versions: []
