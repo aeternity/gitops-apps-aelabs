@@ -38,10 +38,10 @@ app:
     port: 3000
   resources:
     limits:
-      memory: 3500Mi
-      cpu: 3
+      memory: 6Gi
+      cpu: 4
     requests:
-      memory: 3500Mi
+      memory: 6Gi
       cpu: 2
   ingress:
     enabled: true
