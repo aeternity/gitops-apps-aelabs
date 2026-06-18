@@ -42,7 +42,7 @@ app:
       cpu: 4
     requests:
       memory: 6Gi
-      cpu: 2
+      cpu: 1
   ingress:
     enabled: true
     annotations:
