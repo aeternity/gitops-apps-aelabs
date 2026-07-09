@@ -54,5 +54,5 @@ app:
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
     - version: "pr-1172"
-    - version: "pr-1173"
-    - version: "pr-1173"
+      gitSha: "null"
+    - {version: "pr-1173", gitSha: "c9bae241542912154c3bd0463f1abc6002ceec28"}
