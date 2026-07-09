@@ -12,7 +12,7 @@ app:
         paths:
           - path: "/"
   image:
-    tag: 0.28.2
+    tag: 0.28.3
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "testnet.aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "https://dbb329d340904b2c8461a6d5bc362bd9@sentry.dev.service.aepps.com/2"
