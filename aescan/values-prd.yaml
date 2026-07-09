@@ -20,7 +20,7 @@ app:
     requests:
       memory: 4000Mi
   image:
-    tag: 0.28.2
+    tag: 0.28.3
   env:
     "NUXT_PUBLIC_APP_DOMAIN": "aescan.io"
     "NUXT_PUBLIC_SENTRY_DSN": "https://ca073f3a8941437ea8726ac0b5617841@sentry.dev.service.aepps.com/3"
