@@ -49,4 +49,5 @@ app:
     PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
-  versions: []
+  versions:
+    - {version: pr-25, gitSha: 60e7788}
