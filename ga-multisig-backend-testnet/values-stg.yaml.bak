@@ -50,4 +50,4 @@ app:
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
   versions:
-    - {version: pr-28, gitSha: 845f687}
+    - '{version: pr-28, gitSha: 845f687}'
