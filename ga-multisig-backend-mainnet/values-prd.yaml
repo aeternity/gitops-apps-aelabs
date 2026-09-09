@@ -49,4 +49,4 @@ app:
     "MIDDLEWARE_URL": https://mainnet.aeternity.io/mdw
     "NODE_URL": https://mainnet.aeternity.io
   versions:
-    - {version: "main", gitSha: "1c590ef"}
+    - {version: "main", gitSha: "9d7c58a"}
