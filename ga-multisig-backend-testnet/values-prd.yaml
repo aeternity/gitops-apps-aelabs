@@ -49,4 +49,4 @@ app:
     "MIDDLEWARE_URL": https://testnet.aeternity.io/mdw
     "NODE_URL": https://testnet.aeternity.io
   versions:
-    - {version: "main", gitSha: "d25d9cb"}
+    - {version: "main", gitSha: "445ef17"}
