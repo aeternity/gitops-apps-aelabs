@@ -7,41 +7,46 @@ app:
     pullPolicy: "Always"
   resources:
     limits:
-      memory: 450Mi
+      memory: "450Mi"
     requests:
-      cpu: 300m
-      memory: 300Mi
+      cpu: "300m"
+      memory: "300Mi"
   service:
-    port: 3000
+    port: "3000"
   serviceMonitor:
-    enabled: false
-    probes:
+    enabled: "false"
+    probes: ""
     liveness:
       config:
         httpGet:
-          path: /health
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
+          path: "/health"
+        initialDelaySeconds: "120"
+        periodSeconds: "120"
+        successThreshold: "1"
+        timeoutSeconds: "60"
     readiness:
       config:
         httpGet:
-          path: /health
-        initialDelaySeconds: 120
-        periodSeconds: 120
-        successThreshold: 1
-        timeoutSeconds: 60
+          path: "/health"
+        initialDelaySeconds: "120"
+        periodSeconds: "120"
+        successThreshold: "1"
+        timeoutSeconds: "60"
   ingress:
-    enabled: true
+    enabled: "true"
     hosts:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-33-ga-multisig-backend-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-33"
     tls:
       - hosts:
           - "ga-multisig-backend-testnet.stg.service.aepps.com"
-        secretName: ga-multisig-backend-testnet-tls
+          - "pr-33-ga-multisig-backend-testnet.stg.aepps.com"
+        secretName: "ga-multisig-backend-testnet-tls"
   env:
     PG_DB: "ga-multisig-backend-testnet"
     PG_PORT: "5432"
@@ -50,4 +55,6 @@ app:
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
   versions:
-    - {version: pr-25, gitSha: 60e7788}
+    - version: "pr-25"
+      gitSha: "60e7788"
+    - version: "pr-33"
