@@ -57,4 +57,3 @@ app:
   versions:
     - version: "pr-25"
       gitSha: "60e7788"
-    - version: "pr-33"
