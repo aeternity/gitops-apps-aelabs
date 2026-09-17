@@ -42,8 +42,12 @@ app:
         paths:
           - path: "/"
             version: "pr-32"
+      - host: "pr-33-ga-multisig-backend-mainnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-33"
     tls:
-      - hosts: "pr-32-ga-multisig-backend-mainnet.stg.aepps.com"
+      - hosts: "pr-32-ga-multisig-backend-mainnet.stg.aepps.compr-33-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-mainnet"
     PG_PORT: "5432"
@@ -54,3 +58,4 @@ app:
   versions:
     - version: "pr-25"
       gitSha: "60e7788"
+    - version: "pr-33"
