@@ -12,13 +12,8 @@ app:
         paths:
           - path: "/"
             version: "pr-278"
-      - host: "pr-280-state-channel-demo-frontend.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-280"
   versions:
     - version: "pr-274"
       gitSha: "null"
     - version: "pr-278"
       gitSha: "c924587"
-    - version: "pr-280"
