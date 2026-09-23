@@ -13,4 +13,4 @@ app:
     "WS_URL": "wss://sdk-testnet.aepps.com/channel"
     "NODE_ENV": "testnet"
   versions:
-    - {version: "pr-279", gitSha: "b0d0688"}
+    - {version: "pr-279", gitSha: "9cea37e"}
