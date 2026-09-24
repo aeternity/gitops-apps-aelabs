@@ -38,9 +38,14 @@ app:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
+      - host: "pr-38-ga-multisig-backend-testnet.stg.aepps.com"
+        paths:
+          - path: "/"
+            version: "pr-38"
     tls:
       - hosts:
           - "ga-multisig-backend-testnet.stg.service.aepps.com"
+          - "pr-38-ga-multisig-backend-testnet.stg.aepps.com"
         secretName: "ga-multisig-backend-testnet-tls"
   env:
     PG_DB: "ga-multisig-backend-testnet"
@@ -49,4 +54,5 @@ app:
     PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
-  versions: []
+  versions:
+    - version: "pr-38"
