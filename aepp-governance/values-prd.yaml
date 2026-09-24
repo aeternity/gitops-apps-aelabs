@@ -1,6 +1,7 @@
 app:
   image:
     repository: public.ecr.aws/aeternity/aepp-governance
+    tag: governance-aepp-v1.0.2
   ingress:
     hosts:
       - host: "governance.prd.service.aepps.com"
@@ -11,4 +12,4 @@ app:
           - path: "/"
     tls:
       - hosts:
-        - "governance.prd.service.aepps.com"
+          - "governance.prd.service.aepps.com"
