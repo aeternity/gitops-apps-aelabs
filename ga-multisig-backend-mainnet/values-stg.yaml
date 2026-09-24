@@ -55,7 +55,12 @@ app:
           - path: "/"
             version: "pr-36"
     tls:
-      - hosts: "pr-32-ga-multisig-backend-mainnet.stg.aepps.compr-33-ga-multisig-backend-mainnet.stg.aepps.compr-35-ga-multisig-backend-mainnet.stg.aepps.compr-36-ga-multisig-backend-mainnet.stg.aepps.com"
+      - hosts:
+          - "ga-multisig-backend-mainnet.stg.service.aepps.com"
+          - "pr-32-ga-multisig-backend-mainnet.stg.aepps.com"
+          - "pr-33-ga-multisig-backend-mainnet.stg.aepps.com"
+          - "pr-35-ga-multisig-backend-mainnet.stg.aepps.com"
+          - "pr-36-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-mainnet"
     PG_PORT: "5432"
