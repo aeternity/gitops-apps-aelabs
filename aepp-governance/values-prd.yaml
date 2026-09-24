@@ -1,4 +1,6 @@
 app:
+  image:
+    repository: public.ecr.aws/aeternity/aepp-governance
   ingress:
     hosts:
       - host: "governance.prd.service.aepps.com"

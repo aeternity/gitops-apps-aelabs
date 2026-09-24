@@ -5,4 +5,5 @@ app:
         paths:
           - path: "/"
   image:
+    repository: public.ecr.aws/aeternity/governance-server
     tag: governance-server-v1.0.1
