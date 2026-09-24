@@ -38,29 +38,9 @@ app:
       - host: "ga-multisig-backend-mainnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-32-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-32"
-      - host: "pr-33-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-33"
-      - host: "pr-35-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-35"
-      - host: "pr-36-ga-multisig-backend-mainnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-36"
     tls:
       - hosts:
           - "ga-multisig-backend-mainnet.stg.service.aepps.com"
-          - "pr-32-ga-multisig-backend-mainnet.stg.aepps.com"
-          - "pr-33-ga-multisig-backend-mainnet.stg.aepps.com"
-          - "pr-35-ga-multisig-backend-mainnet.stg.aepps.com"
-          - "pr-36-ga-multisig-backend-mainnet.stg.aepps.com"
   env:
     PG_DB: "ga-multisig-backend-mainnet"
     PG_PORT: "5432"
@@ -68,7 +48,4 @@ app:
     PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
     MIDDLEWARE_URL: "https://mainnet.aeternity.io/mdw"
     NODE_URL: "https://mainnet.aeternity.io"
-  versions:
-    - version: "pr-25"
-      gitSha: "60e7788"
-    - version: "pr-35"
+  versions: []

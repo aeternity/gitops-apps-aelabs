@@ -15,7 +15,7 @@ app:
     port: "3000"
   serviceMonitor:
     enabled: "false"
-    probes: ""
+  probes:
     liveness:
       config:
         httpGet:
@@ -38,24 +38,9 @@ app:
       - host: "ga-multisig-backend-testnet.stg.service.aepps.com"
         paths:
           - path: "/"
-      - host: "pr-33-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-33"
-      - host: "pr-35-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-35"
-      - host: "pr-36-ga-multisig-backend-testnet.stg.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-36"
     tls:
       - hosts:
           - "ga-multisig-backend-testnet.stg.service.aepps.com"
-          - "pr-33-ga-multisig-backend-testnet.stg.aepps.com"
-          - "pr-35-ga-multisig-backend-testnet.stg.aepps.com"
-          - "pr-36-ga-multisig-backend-testnet.stg.aepps.com"
         secretName: "ga-multisig-backend-testnet-tls"
   env:
     PG_DB: "ga-multisig-backend-testnet"
@@ -64,7 +49,4 @@ app:
     PG_HOST: "pg-superhero-backend.stg.service.aepps.com"
     MIDDLEWARE_URL: "https://testnet.aeternity.io/mdw"
     NODE_URL: "https://testnet.aeternity.io"
-  versions:
-    - version: "pr-25"
-      gitSha: "60e7788"
-    - version: "pr-35"
+  versions: []
