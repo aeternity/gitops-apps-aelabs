@@ -68,4 +68,3 @@ app:
     - version: "pr-25"
       gitSha: "60e7788"
     - version: "pr-35"
-    - version: "pr-36"
