@@ -12,10 +12,6 @@ app:
         paths:
           - path: "/"
             version: "pr-543"
-      - host: "pr-546-dex-ui.stg.service.aepps.com"
-        paths:
-          - path: "/"
-            version: "pr-546"
       - host: "pr-548-dex-ui.stg.service.aepps.com"
         paths:
           - path: "/"
@@ -25,5 +21,4 @@ app:
       gitSha: "b398445"
     - version: "pr-543"
       gitSha: "9f57b5c"
-    - version: "pr-546"
     - version: "pr-548"
