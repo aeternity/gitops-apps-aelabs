@@ -34,4 +34,3 @@ app:
     "NUXT_PUBLIC_ENABLE_MINING": "true"
   versions:
     - version: "pr-1179"
-    - version: "pr-1181"
