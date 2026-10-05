@@ -59,6 +59,4 @@ app:
   versions:
     - version: "pr-1179"
       gitSha: "null"
-    - version: "pr-1183"
-      gitSha: "61112251d8bb8849f8f472f69f7eacd6f7a61fbf"
-    - version: "pr-1183"
+    - {version: "pr-1183", gitSha: "344926075dafbc77a64f185e0d509f6e2317769b"}
