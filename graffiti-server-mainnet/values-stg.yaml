@@ -54,7 +54,7 @@ app:
     "CONTRACT_ADDRESS": "ct_ftU4u1wEsiWd6YN4AAekEArJmLds4K8AB2k4UXKxn32Yrf5n5"
     "PATH_IDENTIFIER": "/"
     "COMPILER_URL": "https://compiler.aeternity.io"
-    "IPFS_URL": "http://ipfs.stg.service.aepps.com:5001"
+    "IPFS_URL": "http://ipfs.prd.service.aepps.com:5001"
     "S3_BUCKET": "aeternity-superhero-graffiti-stg"
   serviceMonitor:
     enabled: false
